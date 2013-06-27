@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<cc:CountryCodes xmlns:cc="http://www.flemax.utility.com/geocode" class="com.anosym.utilities.geocode.CountryCodes" ref-id="697946499">
+   <cc:countryCodes class="java.util.ArrayList" ref-id="162868911" collection="true">
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1443620899">
+         <cc:name class="java.lang.String" ref-id="1108914429">Afghanistan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1661719537">AF</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="495429124">AFG</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="883187649">93</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="327848679">
+         <cc:name class="java.lang.String" ref-id="1857193398">Albania</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="174631041">AL</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1561244285">ALB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1877498949">355</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="126825">
+         <cc:name class="java.lang.String" ref-id="2131547775">Algeria</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="601255171">DZ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1385099862">DZA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="650647154">213</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="439986754">
+         <cc:name class="java.lang.String" ref-id="1071177857">American Samoa</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="930829798">AS</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="38046591">ASM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1646411778">1 684</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="915961251">
+         <cc:name class="java.lang.String" ref-id="1397963861">Andorra</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2107513647">AD</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="386591511">AND</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1305493202">376</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="583824615">
+         <cc:name class="java.lang.String" ref-id="487521162">Angola</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1118056429">AO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="692490953">AGO</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1481563978">244</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="572891281">
+         <cc:name class="java.lang.String" ref-id="1414570266">Anguilla</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2038488372">AI</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2067447613">AIA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1306623231">1 264</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="248869195">
+         <cc:name class="java.lang.String" ref-id="1593899656">Antarctica</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="960505714">AQ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="584960699">ATA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="254332127">672</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1067600959">
+         <cc:name class="java.lang.String" ref-id="943447228">Antigua and Barbuda</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1645795195">AG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1290469005">ATG</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1475215982">1 268</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1256304859">
+         <cc:name class="java.lang.String" ref-id="656547909">Argentina</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="829728277">AR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1631831568">ARG</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="679507539">54</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="165173227">
+         <cc:name class="java.lang.String" ref-id="1517554265">Armenia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2018740083">AM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="870436028">ARM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="759719232">374</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1810850809">
+         <cc:name class="java.lang.String" ref-id="831301579">Aruba</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="157030871">AW</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2107930381">ABW</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="948188908">297</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1882316016">
+         <cc:name class="java.lang.String" ref-id="1503676955">Australia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="711024789">AU</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1594616815">AUS</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="128895145">61</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1677185839">
+         <cc:name class="java.lang.String" ref-id="592045551">Austria</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1217839106">AT</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="555214985">AUT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="681806680">43</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="152130368">
+         <cc:name class="java.lang.String" ref-id="1349555046">Bahamas</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="249378508">BS</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1563988659">BHS</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="757552533">1 242</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1902362715">
+         <cc:name class="java.lang.String" ref-id="1488943934">Azerbaijan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2105415062">AZ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="594393104">AZE</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1843455568">994</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1211156107">
+         <cc:name class="java.lang.String" ref-id="2050684083">Bangladesh</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="882332278">BD</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="984013811">BGD</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="548555930">880</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="432218939">
+         <cc:name class="java.lang.String" ref-id="1514013619">Bahrain</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="493161230">BH</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1421398837">BHR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="842164231">973</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="189513040">
+         <cc:name class="java.lang.String" ref-id="427414779">Belarus</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="227391438">BY</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1394490453">BLR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1712003860">375</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1662972514">
+         <cc:name class="java.lang.String" ref-id="79377093">Barbados</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="503457264">BB</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="520666868">BRB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1999672598">1 246</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="378279036">
+         <cc:name class="java.lang.String" ref-id="1184162932">Belize</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1495441375">BZ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1882068784">BLZ</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1643416025">501</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="2105948108">
+         <cc:name class="java.lang.String" ref-id="1991864949">Belgium</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="151624760">BE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1441735978">BEL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1198593145">32</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1358379155">
+         <cc:name class="java.lang.String" ref-id="379806828">Bermuda</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1091959312">BM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="164909522">BMU</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1380431624">1 441</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1648466027">
+         <cc:name class="java.lang.String" ref-id="1081985842">Benin</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="44523698">BJ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="985483130">BEN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1621080246">229</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="370665033">
+         <cc:name class="java.lang.String" ref-id="2064633331">Bolivia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1251625891">BO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1474027672">BOL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="611731512">591</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1367303995">
+         <cc:name class="java.lang.String" ref-id="55737418">Bhutan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="475914234">BT</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1461429410">BTN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1473623131">975</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="255061866">
+         <cc:name class="java.lang.String" ref-id="447422450">Botswana</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1488869003">BW</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="941878577">BWA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1051281602">267</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1541920945">
+         <cc:name class="java.lang.String" ref-id="1380154266">Bosnia and Herzegovina</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1281877415">BA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="957767201">BIH</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1803412942">387</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="377122436">
+         <cc:name class="java.lang.String" ref-id="1072539555">British Indian Ocean Territory</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="194567967">IO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1633710635">IOT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="48731903"> </cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="845824214">
+         <cc:name class="java.lang.String" ref-id="1573305205">Brazil</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="574434924">BR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1588774403">BRA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="719724423">55</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1780477457">
+         <cc:name class="java.lang.String" ref-id="1447482501">Bulgaria</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1143641091">BG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1197175787">BGR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1159163366">359</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="87046778">
+         <cc:name class="java.lang.String" ref-id="558834239">Burkina Faso</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1381066542">BF</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1582114618">BFA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="457867572">226</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="946375403">
+         <cc:name class="java.lang.String" ref-id="1467508539">British Virgin Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="566329178">VG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="646971142">VGB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="934278833">1 284</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="23919367">
+         <cc:name class="java.lang.String" ref-id="433359180">Brunei</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1350691283">BN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="18760944">BRN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1782573346">673</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="165866925">
+         <cc:name class="java.lang.String" ref-id="291634669">Cambodia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="946199429">KH</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="657397168">KHM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="70838761">855</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="881115689">
+         <cc:name class="java.lang.String" ref-id="2011638958">Cameroon</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1780912385">CM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="167382809">CMR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2146776940">237</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1007277333">
+         <cc:name class="java.lang.String" ref-id="696546430">Burma (Myanmar)</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="922489213">MM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1591755198">MMR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1425822107">95</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="22135476">
+         <cc:name class="java.lang.String" ref-id="516274201">Burundi</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1186562327">BI</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1019883847">BDI</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2120829822">257</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="853245448">
+         <cc:name class="java.lang.String" ref-id="1747933517">Cayman Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2089812906">KY</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1390464457">CYM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="619082145">1 345</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="355341300">
+         <cc:name class="java.lang.String" ref-id="69206793">Central African Republic</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1369916924">CF</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1021562181">CAF</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="263818302">236</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1587954306">
+         <cc:name class="java.lang.String" ref-id="1968739673">Canada</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="179651135">CA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="34618263">CAN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2008561551">1</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1598540464">
+         <cc:name class="java.lang.String" ref-id="1649154478">Cape Verde</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1915363564">CV</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="735551618">CPV</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1500171594">238</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1925964578">
+         <cc:name class="java.lang.String" ref-id="665651215">China</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1357653282">CN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1064961199">CHN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1674157495">86</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1234275471">
+         <cc:name class="java.lang.String" ref-id="1923294724">Christmas Island</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="890571624">CX</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2023748625">CXR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1297139189">61</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1911848826">
+         <cc:name class="java.lang.String" ref-id="1792892168">Chad</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1795616519">TD</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="339143542">TCD</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="563911256">235</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="811145381">
+         <cc:name class="java.lang.String" ref-id="694227311">Chile</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="599761826">CL</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2056254211">CHL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="10193106">56</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1664324429">
+         <cc:name class="java.lang.String" ref-id="1326176028">Cook Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="307730383">CK</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="883925105">COK</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1984853436">682</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="420726354">
+         <cc:name class="java.lang.String" ref-id="1631665754">Comoros</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="40155288">KM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="580060258">COM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1644482473">269</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="702386821">
+         <cc:name class="java.lang.String" ref-id="297692988">Colombia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1836635453">CO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="402116593">COL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="242541442">57</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="470053688">
+         <cc:name class="java.lang.String" ref-id="1747480550">Cocos (Keeling) Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="919247478">CC</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="795006228">CCK</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="26422362">61</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1699006852">
+         <cc:name class="java.lang.String" ref-id="118107405">Cyprus</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="756266007">CY</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1754556703">CYP</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1736550364">357</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1899205018">
+         <cc:name class="java.lang.String" ref-id="1889292165">Cuba</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="640212613">CU</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1160315221">CUB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="118920940">53</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1544446870">
+         <cc:name class="java.lang.String" ref-id="883702801">Croatia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="396073755">HR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1759778232">HRV</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1447958740">385</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="557855376">
+         <cc:name class="java.lang.String" ref-id="2109185277">Costa Rica</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="564389510">CR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="259225771">CRC</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1710697081">506</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1174774331">
+         <cc:name class="java.lang.String" ref-id="467530599">Djibouti</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="144113020">DJ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1893456971">DJI</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1918630351">253</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1953349552">
+         <cc:name class="java.lang.String" ref-id="1363408775">Denmark</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1160767935">DK</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1285234197">DNK</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1540627453">45</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1115270692">
+         <cc:name class="java.lang.String" ref-id="1117249428">Democratic Republic of the Congo</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="14127028">CD</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1209758426">COD</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="34695986">243</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1167368365">
+         <cc:name class="java.lang.String" ref-id="549511563">Czech Republic</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1461157241">CZ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1194246042">CZE</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1311063032">420</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1854160604">
+         <cc:name class="java.lang.String" ref-id="742069811">Egypt</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1529775348">EG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1260051952">EGY</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1356914197">20</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1528061486">
+         <cc:name class="java.lang.String" ref-id="372460729">Ecuador</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="32641298">EC</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="993965501">ECU</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="302885294">593</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1056892868">
+         <cc:name class="java.lang.String" ref-id="1361188139">Dominican Republic</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="345760682">DO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="109033592">DOM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="724029853">1 809</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1127395469">
+         <cc:name class="java.lang.String" ref-id="887430002">Dominica</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="762115199">DM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1277678885">DMA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1260033842">1 767</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1052539427">
+         <cc:name class="java.lang.String" ref-id="1207349250">Ethiopia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="345864247">ET</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1849650547">ETH</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="103469457">251</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1696893376">
+         <cc:name class="java.lang.String" ref-id="1104138272">Falkland Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="845743777">FK</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="221400546">FLK</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1637300018">500</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="245949868">
+         <cc:name class="java.lang.String" ref-id="1920894648">Faroe Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1354683585">FO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="545387601">FRO</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="869204611">298</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1538130183">
+         <cc:name class="java.lang.String" ref-id="2093326742">Fiji</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="317963993">FJ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1081516615">FJI</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="748160097">679</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="809997094">
+         <cc:name class="java.lang.String" ref-id="722320525">El Salvador</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="316007184">SV</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="405682457">SLV</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="44475574">503</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="176663062">
+         <cc:name class="java.lang.String" ref-id="1353682880">Equatorial Guinea</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="906407842">GQ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1895092323">GNQ</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1486704004">240</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1061962383">
+         <cc:name class="java.lang.String" ref-id="665180864">Eritrea</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2042398613">ER</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1214875043">ERI</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="130332025">291</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="57024235">
+         <cc:name class="java.lang.String" ref-id="628611083">Estonia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1594412388">EE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="988057850">EST</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1944726346">372</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="314589882">
+         <cc:name class="java.lang.String" ref-id="207407860">Gambia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="537943939">GM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="317628903">GMB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1892109926">220</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="753681506">
+         <cc:name class="java.lang.String" ref-id="1266521336">Gaza Strip</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="566185088"> </cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="372734159"> </cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="333212014">970</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1804451569">
+         <cc:name class="java.lang.String" ref-id="653457249">Georgia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="424613185">GE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="385641314">GEO</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="367917752">995</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="988238151">
+         <cc:name class="java.lang.String" ref-id="680077959">Germany</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1162287579">DE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1056087141">DEU</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="704236332">49</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1317653307">
+         <cc:name class="java.lang.String" ref-id="947762885">Finland</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1164598396">FI</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1239282814">FIN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="182362645">358</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="509810246">
+         <cc:name class="java.lang.String" ref-id="2068536639">France</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="282530390">FR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="401921213">FRA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1253757076">33</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="785631968">
+         <cc:name class="java.lang.String" ref-id="1387024420">French Polynesia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="784438755">PF</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="660046352">PYF</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1646001309">689</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="459659709">
+         <cc:name class="java.lang.String" ref-id="1002050904">Gabon</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="902783754">GA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1114587423">GAB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="370965580">241</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="673475819">
+         <cc:name class="java.lang.String" ref-id="1869270243">Guam</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1286702138">GU</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="442508076">GUM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="497363771">1 671</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1186545073">
+         <cc:name class="java.lang.String" ref-id="729895869">Grenada</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="933278619">GD</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="393191845">GRD</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="568157096">1 473</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1304017910">
+         <cc:name class="java.lang.String" ref-id="1558395735">Guinea</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1246559333">GN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="72249599">GIN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="970749838">224</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="959261007">
+         <cc:name class="java.lang.String" ref-id="1140006620">Guatemala</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="242163806">GT</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="565576377">GTM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="879546617">502</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1410049618">
+         <cc:name class="java.lang.String" ref-id="1221885081">Gibraltar</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1983923753">GI</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1975413349">GIB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="674974023">350</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1279781107">
+         <cc:name class="java.lang.String" ref-id="84856997">Ghana</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="262406971">GH</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1490034306">GHA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1199773275">233</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1865471242">
+         <cc:name class="java.lang.String" ref-id="1861401741">Greenland</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="37291491">GL</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1840347960">GRL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="521195979">299</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="155022940">
+         <cc:name class="java.lang.String" ref-id="572888769">Greece</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1372351082">GR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1130266394">GRC</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1894426243">30</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1029315679">
+         <cc:name class="java.lang.String" ref-id="1727840368">Hong Kong</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1539190242">HK</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="582385532">HKG</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2070656945">852</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1558774980">
+         <cc:name class="java.lang.String" ref-id="1178079107">Honduras</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="176326009">HN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2131284050">HND</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="463796390">504</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1807771767">
+         <cc:name class="java.lang.String" ref-id="621450213">Iceland</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1500754530">IS</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="985951695">IS</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="906317613">354</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="378613520">
+         <cc:name class="java.lang.String" ref-id="363384579">Hungary</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2108610832">HU</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1647110630">HUN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1924148580">36</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="208943887">
+         <cc:name class="java.lang.String" ref-id="584145964">Guyana</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1593466511">GY</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="123088640">GUY</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="724020419">592</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="968838231">
+         <cc:name class="java.lang.String" ref-id="1043136863">Guinea-Bissau</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2092245980">GW</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1480949882">GNB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="989198044">245</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1780614081">
+         <cc:name class="java.lang.String" ref-id="1596238422">Holy See (Vatican City)</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1613440230">VA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="813934941">VAT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="333721997">39</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1785801262">
+         <cc:name class="java.lang.String" ref-id="730359962">Haiti</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="143355082">HT</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2039694887">HTI</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="870508748">509</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1981924272">
+         <cc:name class="java.lang.String" ref-id="582390887">Israel</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="13174783">IL</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="237762240">ISR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1750384260">972</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="329777567">
+         <cc:name class="java.lang.String" ref-id="2063759309">Italy</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1594323666">IT</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1644390843">ITA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1309845058">39</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="711024409">
+         <cc:name class="java.lang.String" ref-id="1588230155">Ireland</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="162482875">IE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1397964788">IRL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2123093736">353</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="248142400">
+         <cc:name class="java.lang.String" ref-id="116074326">Isle of Man</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="946045606">IM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="219577654">IMN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1064725232">44</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="2003227420">
+         <cc:name class="java.lang.String" ref-id="2142113921">Iran</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2092811939">IR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="255604560">IRN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="978545920">98</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="991508714">
+         <cc:name class="java.lang.String" ref-id="1961339125">Iraq</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="352692425">IQ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="646721255">IRQ</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1029395318">964</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="918849394">
+         <cc:name class="java.lang.String" ref-id="546859381">India</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1983090954">IN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="863462438">IND</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1666192687">91</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="513733529">
+         <cc:name class="java.lang.String" ref-id="1435160963">Indonesia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="213982037">ID</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1508470781">IDN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1823963432">62</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="24340699">
+         <cc:name class="java.lang.String" ref-id="1072235163">Kenya</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1521102564">KE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1525459260">KEN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1734004934">254</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="2067835948">
+         <cc:name class="java.lang.String" ref-id="1390918635">Kiribati</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1810000850">KI</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1578426195">KIR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="743567974">686</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="939597125">
+         <cc:name class="java.lang.String" ref-id="1361623484">Jordan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1220153156">JO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="792747689">JOR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="721863035">962</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1216907342">
+         <cc:name class="java.lang.String" ref-id="2074926613">Kazakhstan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="304641058">KZ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="501247358">KAZ</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2033482372">7</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1683467846">
+         <cc:name class="java.lang.String" ref-id="947038497">Japan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1874711162">JP</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="390430950">JPN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1410435065">81</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1257641869">
+         <cc:name class="java.lang.String" ref-id="1652838509">Jersey</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1555846818">JE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1356584254">JEY</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="277676779"> </cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="431659722">
+         <cc:name class="java.lang.String" ref-id="705188088">Ivory Coast</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="133947223">CI</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="688114905">CIV</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="947769240">225</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1271406881">
+         <cc:name class="java.lang.String" ref-id="1073161317">Jamaica</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2054587313">JM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2059409478">JAM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1501158047">1 876</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1325410973">
+         <cc:name class="java.lang.String" ref-id="334352880">Liberia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1651633608">LR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="632428534">LBR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1329801935">231</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1118807216">
+         <cc:name class="java.lang.String" ref-id="426066180">Lesotho</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1183808162">LS</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1975272926">LSO</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="462368309">266</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1428334517">
+         <cc:name class="java.lang.String" ref-id="1446021053">Lebanon</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="203404672">LB</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1975839927">LBN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1402019528">961</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1551632212">
+         <cc:name class="java.lang.String" ref-id="1388661563">Latvia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="382613745">LV</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1023173097">LVA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1568679750">371</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="143824031">
+         <cc:name class="java.lang.String" ref-id="1331386142">Laos</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1974770501">LA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="608045922">LAO</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1700618628">856</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1437422873">
+         <cc:name class="java.lang.String" ref-id="1722681408">Kyrgyzstan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="731895402">KG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="179691398">KGZ</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="711318504">996</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="88633879">
+         <cc:name class="java.lang.String" ref-id="1463436982">Kuwait</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="855147383">KW</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1501500357">KWT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="636164202">965</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1838148248">
+         <cc:name class="java.lang.String" ref-id="57858394">Kosovo</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1763419514"> </cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="369959551"> </cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="945015592">381</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="88001532">
+         <cc:name class="java.lang.String" ref-id="1572999188">Malawi</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1873658146">MW</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2019743861">MWI</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="561063698">265</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="196878309">
+         <cc:name class="java.lang.String" ref-id="1808922983">Madagascar</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="642584702">MG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="225825751">MDG</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="849792808">261</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1701471506">
+         <cc:name class="java.lang.String" ref-id="739357890">Macedonia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1047675688">MK</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1066866463">MKD</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1483674838">389</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1690376949">
+         <cc:name class="java.lang.String" ref-id="1104215680">Macau</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2146740033">MO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="386981384">MAC</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1415637772">853</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="652708891">
+         <cc:name class="java.lang.String" ref-id="731862161">Luxembourg</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1768493558">LU</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1897554826">LUX</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2071802632">352</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1486983566">
+         <cc:name class="java.lang.String" ref-id="1465593623">Lithuania</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="594590671">LT</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1043998006">LTU</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1533090852">370</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1149152858">
+         <cc:name class="java.lang.String" ref-id="1491646935">Liechtenstein</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="385941467">LI</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1117621929">LIE</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1979784041">423</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1118750469">
+         <cc:name class="java.lang.String" ref-id="1619802998">Libya</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="378794367">LY</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1255396461">LBY</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="421488252">218</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1551983558">
+         <cc:name class="java.lang.String" ref-id="851282844">Micronesia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="974702794">FM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="824599442">FSM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1330847603">691</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1513480116">
+         <cc:name class="java.lang.String" ref-id="116510897">Mexico</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1841043462">MX</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1473079858">MEX</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1861690790">52</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="600370740">
+         <cc:name class="java.lang.String" ref-id="1552853574">Monaco</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="441256227">MC</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="932374098">MCO</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="223292927">377</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1230292780">
+         <cc:name class="java.lang.String" ref-id="1558200144">Moldova</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="106745043">MD</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="915092456">MDA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1828511825">373</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1307254205">
+         <cc:name class="java.lang.String" ref-id="116230978">Montenegro</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1431412123">ME</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1631737567">MNE</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1247116379">382</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="844587133">
+         <cc:name class="java.lang.String" ref-id="109037661">Mongolia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="792417536">MN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1615432505">MNG</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2085846161">976</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1293374299">
+         <cc:name class="java.lang.String" ref-id="912368359">Morocco</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1141770133">MA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1964239386">MAR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1852738818">212</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="468432626">
+         <cc:name class="java.lang.String" ref-id="272095280">Montserrat</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1112686497">MS</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="634357003">MSR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1529325713">1 664</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="145487448">
+         <cc:name class="java.lang.String" ref-id="1371148250">Maldives</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="241621793">MV</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="45898474">MDV</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="469023245">960</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1608694225">
+         <cc:name class="java.lang.String" ref-id="504723845">Malaysia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="333257265">MY</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="417501479">MYS</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1118282804">60</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="202208284">
+         <cc:name class="java.lang.String" ref-id="1195499634">Malta</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="905347306">MT</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1250532947">MLT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="284787040">356</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1822215764">
+         <cc:name class="java.lang.String" ref-id="716055681">Mali</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="249472779">ML</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1000917709">MLI</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1184528212">223</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1192251394">
+         <cc:name class="java.lang.String" ref-id="2146752448">Mauritania</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="595640289">MR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1505058556">MRT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="309272679">222</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1035490213">
+         <cc:name class="java.lang.String" ref-id="276534603">Marshall Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="562460513">MH</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="50827897">MHL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1713457020">692</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="316428870">
+         <cc:name class="java.lang.String" ref-id="1050508118">Mayotte</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1426877239">YT</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="575869824">MYT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2082818586">262</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1948528802">
+         <cc:name class="java.lang.String" ref-id="1945442111">Mauritius</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1607034002">MU</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="518643295">MUS</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="201735892">230</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1845941878">
+         <cc:name class="java.lang.String" ref-id="48895337">Nicaragua</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1445175805">NI</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1029707065">NIC</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1863413929">505</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1643880502">
+         <cc:name class="java.lang.String" ref-id="1322478459">Niger</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="439713963">NE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="781346814">NER</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="233401493">227</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1473753429">
+         <cc:name class="java.lang.String" ref-id="297496705">Nigeria</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="685190719">NG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1193099019">NGA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1360400294">234</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="2136835296">
+         <cc:name class="java.lang.String" ref-id="1421791091">Niue</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="992326268">NU</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="669583674">NIU</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="878498638">683</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="976535741">
+         <cc:name class="java.lang.String" ref-id="1566168613">Norfolk Island</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="888817412"> </cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="457994952">NFK</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="939767416">672</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="2076220674">
+         <cc:name class="java.lang.String" ref-id="579087815">North Korea</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="333018501">KP</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="699562225">PRK</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="69348250">850</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1599901076">
+         <cc:name class="java.lang.String" ref-id="894640245">Northern Mariana Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1685585068">MP</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="23966652">MNP</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1228078175">1 670</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="844555908">
+         <cc:name class="java.lang.String" ref-id="1731722733">Norway</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="218105740">NO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2096070398">NOR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1333433798">47</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="2029986541">
+         <cc:name class="java.lang.String" ref-id="911094698">Mozambique</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1210186176">MZ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="781439295">MOZ</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1787729660">258</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="928690443">
+         <cc:name class="java.lang.String" ref-id="589129105">Namibia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1593255065">NA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="864283012">NAM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="425194376">264</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1563783863">
+         <cc:name class="java.lang.String" ref-id="1610513455">Nauru</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1015751397">NR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1386219376">NRU</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="138966129">674</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1289005814">
+         <cc:name class="java.lang.String" ref-id="505684962">Nepal</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1454365155">NP</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="856289931">NPL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1376951770">977</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1144618318">
+         <cc:name class="java.lang.String" ref-id="441560800">Netherlands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1756365215">NL</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2067440490">NLD</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1186906970">31</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="369847807">
+         <cc:name class="java.lang.String" ref-id="1214417831">Netherlands Antilles</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1035904529">AN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="797492674">ANT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1013930991">599</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="855426792">
+         <cc:name class="java.lang.String" ref-id="1902560126">New Caledonia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="296533852">NC</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1682389524">NCL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="3549819">687</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1679749464">
+         <cc:name class="java.lang.String" ref-id="729217986">New Zealand</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="277517273">NZ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2045809674">NZL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="562518801">64</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1030474313">
+         <cc:name class="java.lang.String" ref-id="1873649183">Puerto Rico</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1869102720">PR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="618626724">PRI</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1291015141">1</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="2064189146">
+         <cc:name class="java.lang.String" ref-id="228659537">Portugal</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1232593876">PT</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1578014970">PRT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="274560340">351</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1740760624">
+         <cc:name class="java.lang.String" ref-id="1794084487">Poland</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="360085482">PL</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="347778728">POL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1814078009">48</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1383760804">
+         <cc:name class="java.lang.String" ref-id="1767419465">Pitcairn Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1025142951">PN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="316277576">PCN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="655193507">870</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1688613980">
+         <cc:name class="java.lang.String" ref-id="1538766755">Russia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2054774111">RU</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="903956170">RUS</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1492030312">7</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="386907765">
+         <cc:name class="java.lang.String" ref-id="178323239">Romania</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1338990308">RO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="928969643">ROU</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="986676211">40</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="198356143">
+         <cc:name class="java.lang.String" ref-id="877075257">Republic of the Congo</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="676091391">CG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="732032260">COG</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="332380157">242</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="708332852">
+         <cc:name class="java.lang.String" ref-id="1448388243">Qatar</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1334061356">QA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1839935612">QAT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="33314084">974</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1564061568">
+         <cc:name class="java.lang.String" ref-id="1982934096">Panama</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="374633679">PA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="46189949">PAN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1072876276">507</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1558870520">
+         <cc:name class="java.lang.String" ref-id="636336240">Palau</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="434623620">PW</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1127297893">PLW</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1394953817">680</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="909828020">
+         <cc:name class="java.lang.String" ref-id="1395965500">Pakistan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="733315025">PK</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="416975042">PAK</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="860390733">92</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1579654280">
+         <cc:name class="java.lang.String" ref-id="2056639746">Oman</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="47428910">OM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="421257333">OMN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1965895219">968</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1765036638">
+         <cc:name class="java.lang.String" ref-id="1779158855">Philippines</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="760575157">PH</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1163996755">PHL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1864920762">63</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1199418969">
+         <cc:name class="java.lang.String" ref-id="205617594">Peru</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="513714335">PE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1112567405">PER</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="780261406">51</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1318302060">
+         <cc:name class="java.lang.String" ref-id="1113936321">Paraguay</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="165312501">PY</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1710848736">PRY</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1576156269">595</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1247627338">
+         <cc:name class="java.lang.String" ref-id="842340458">Papua New Guinea</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1003876582">PG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1522182842">PNG</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="354338783">675</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="399772750">
+         <cc:name class="java.lang.String" ref-id="1651761434">Sao Tome and Principe</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="633316469">ST</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1220939951">STP</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1131509372">239</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1310321019">
+         <cc:name class="java.lang.String" ref-id="120566348">Saudi Arabia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1281531715">SA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1590038242">SAU</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="486230026">966</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="892770147">
+         <cc:name class="java.lang.String" ref-id="319619040">Samoa</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="980604133">WS</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1224156253">WSM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1500805911">685</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1849512162">
+         <cc:name class="java.lang.String" ref-id="2072600056">San Marino</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2004386852">SM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="153851075">SMR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="204706537">378</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="233964865">
+         <cc:name class="java.lang.String" ref-id="204928398">Seychelles</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1815299045">SC</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="430876386">SYC</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="424561818">248</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1669799792">
+         <cc:name class="java.lang.String" ref-id="1008805148">Sierra Leone</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="604729371">SL</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1793920793">SLE</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1903847718">232</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="462256126">
+         <cc:name class="java.lang.String" ref-id="1690358483">Senegal</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="793857618">SN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="49086915">SEN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="370059957">221</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="485055587">
+         <cc:name class="java.lang.String" ref-id="481326697">Serbia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="86898230">RS</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="209671650">SRB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2078240470">381</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="166060835">
+         <cc:name class="java.lang.String" ref-id="1403196392">Saint Helena</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2003832637">SH</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1576577805">SHN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1889931949">290</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="655644066">
+         <cc:name class="java.lang.String" ref-id="671224505">Saint Kitts and Nevis</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="538657844">KN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1578812003">KNA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="785392089">1 869</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1650345361">
+         <cc:name class="java.lang.String" ref-id="455697675">Rwanda</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="984138523">RW</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="497106867">RWA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1163726839">250</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1623409844">
+         <cc:name class="java.lang.String" ref-id="869512973">Saint Barthelemy</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="278319376">BL</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="494369266">BLM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="250023419">590</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1665589601">
+         <cc:name class="java.lang.String" ref-id="1115085362">Saint Pierre and Miquelon</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="149891765">PM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="232576424">SPM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="491720628">508</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="831521140">
+         <cc:name class="java.lang.String" ref-id="1699708951">Saint Vincent and the Grenadines</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1180867063">VC</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1936345914">VCT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1198589960">1 784</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1304848860">
+         <cc:name class="java.lang.String" ref-id="491786856">Saint Lucia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1944615136">LC</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="592967059">LCA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1673238533">1 758</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="821666666">
+         <cc:name class="java.lang.String" ref-id="1431805252">Saint Martin</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1796605729">MF</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1932410483">MAF</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1627794200">1 599</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1542940267">
+         <cc:name class="java.lang.String" ref-id="1332029944">Sweden</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2057732480">SE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1233140072">SWE</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="20512907">46</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1163044429">
+         <cc:name class="java.lang.String" ref-id="891563209">Swaziland</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1509448544">SZ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1077356997">SWZ</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1704420722">268</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="914707321">
+         <cc:name class="java.lang.String" ref-id="1797998821">Syria</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1723787610">SY</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2143963240">SYR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="962061667">963</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="966059006">
+         <cc:name class="java.lang.String" ref-id="1577342522">Switzerland</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1857628686">CH</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1048065516">CHE</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1176254718">41</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1726074791">
+         <cc:name class="java.lang.String" ref-id="1929908661">Sudan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="381861139">SD</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1259025937">SDN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1292549268">249</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="2078457871">
+         <cc:name class="java.lang.String" ref-id="1672435795">Sri Lanka</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="214950982">LK</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="613660220">LKA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1570844646">94</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="22009104">
+         <cc:name class="java.lang.String" ref-id="539823644">Svalbard</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1845059780">SJ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="255859780">SJM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="973061166"> </cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1151045057">
+         <cc:name class="java.lang.String" ref-id="1081580823">Suriname</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1827303953">SR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="333902324">SUR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="521589857">597</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="332479545">
+         <cc:name class="java.lang.String" ref-id="231263321">South Africa</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2044718624">ZA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1552594274">ZAF</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="378168421">27</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1472540274">
+         <cc:name class="java.lang.String" ref-id="1382837090">Somalia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1274943796">SO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="388549606">SOM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2002941162">252</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1625943009">
+         <cc:name class="java.lang.String" ref-id="494744188">Spain</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="108886532">ES</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="399876080">ESP</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1240945097">34</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="203065615">
+         <cc:name class="java.lang.String" ref-id="572276222">South Korea</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1814691888">KR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="963806922">KOR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="233788733">82</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1539645168">
+         <cc:name class="java.lang.String" ref-id="1785875873">Slovakia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1984347039">SK</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="499646563">SVK</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="898724571">421</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1611375446">
+         <cc:name class="java.lang.String" ref-id="470848605">Singapore</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="75265040">SG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="111659197">SGP</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1902900148">65</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1716316312">
+         <cc:name class="java.lang.String" ref-id="1127909280">Solomon Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="933116891">SB</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1969996643">SLB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1978193102">677</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="149642460">
+         <cc:name class="java.lang.String" ref-id="337474583">Slovenia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="431004754">SI</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="434559147">SVN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="43700182">386</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="29551600">
+         <cc:name class="java.lang.String" ref-id="605018743">Turks and Caicos Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="214945056">TC</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="514061938">TCA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="512280085">1 649</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="629447772">
+         <cc:name class="java.lang.String" ref-id="624258882">Tuvalu</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1461414179">TV</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1217635714">TUV</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1431772935">688</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1253453910">
+         <cc:name class="java.lang.String" ref-id="2132771947">Uganda</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1848561152">UG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1121360515">UGA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="389689533">256</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1834341428">
+         <cc:name class="java.lang.String" ref-id="501144064">Ukraine</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="297420114">UA</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1545409429">UKR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2029046385">380</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="142278335">
+         <cc:name class="java.lang.String" ref-id="1122677234">Trinidad and Tobago</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1044949296">TT</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="341552706">TTO</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="252541311">1 868</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1034127505">
+         <cc:name class="java.lang.String" ref-id="995821364">Tunisia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1429603677">TN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1301956703">TUN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2084753959">216</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="116604461">
+         <cc:name class="java.lang.String" ref-id="1266089963">Turkey</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1906033665">TR</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="694245356">TUR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="903044141">90</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1195944438">
+         <cc:name class="java.lang.String" ref-id="1938717193">Turkmenistan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="250486820">TM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="864035620">TKM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="562244326">993</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="712340282">
+         <cc:name class="java.lang.String" ref-id="81787549">Timor-Leste</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="213801963">TL</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="629450710">TLS</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="673637848">670</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="297524352">
+         <cc:name class="java.lang.String" ref-id="1149853848">Togo</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="388283983">TG</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1833582695">TGO</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="634020415">228</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="167258491">
+         <cc:name class="java.lang.String" ref-id="57364314">Tokelau</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2049351542">TK</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2108635808">TKL</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2066882262">690</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="394703562">
+         <cc:name class="java.lang.String" ref-id="205780951">Tonga</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1111771787">TO</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="293211562">TON</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1679236316">676</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="694674138">
+         <cc:name class="java.lang.String" ref-id="1667132274">Taiwan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1272986709">TW</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1855526749">TWN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="80548709">886</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="867454553">
+         <cc:name class="java.lang.String" ref-id="42192788">Tajikistan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="464584406">TJ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="19571150">TJK</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="367320059">992</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1680230135">
+         <cc:name class="java.lang.String" ref-id="217920895">Tanzania</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1136864130">TZ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1113425551">TZA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="170735699">255</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="516740701">
+         <cc:name class="java.lang.String" ref-id="437093239">Thailand</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1831995133">TH</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1869153292">THA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1468590328">66</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1568087725">
+         <cc:name class="java.lang.String" ref-id="931078091">Zimbabwe</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2063623395">ZW</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1457500715">ZWE</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="2016039323">263</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="575919295">
+         <cc:name class="java.lang.String" ref-id="766794036">Zambia</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="457997405">ZM</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="980994987">ZMB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1350788490">260</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1652518993">
+         <cc:name class="java.lang.String" ref-id="480708700">Yemen</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="437640886">YE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="298880027">YEM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="312363456">967</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1442571724">
+         <cc:name class="java.lang.String" ref-id="212590638">Western Sahara</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1745547905">EH</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="649537668">ESH</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1120208375"> </cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="353025376">
+         <cc:name class="java.lang.String" ref-id="1947661418">West Bank</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="252221105"> </cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="2094876204"> </cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="589968063">970</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="661236642">
+         <cc:name class="java.lang.String" ref-id="176368869">Wallis and Futuna</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="704148423">WF</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1987650391">WLF</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="184508805">681</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="73099367">
+         <cc:name class="java.lang.String" ref-id="220415085">Vietnam</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="107042520">VN</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1619821101">VNM</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="683051488">84</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1746265601">
+         <cc:name class="java.lang.String" ref-id="1974436105">Venezuela</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1430303291">VE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="175467319">VEN</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="584183102">58</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="70161230">
+         <cc:name class="java.lang.String" ref-id="231270407">Vanuatu</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="16329379">VU</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1717449684">VUT</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="849139661">678</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1461448112">
+         <cc:name class="java.lang.String" ref-id="1787947645">Uzbekistan</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="297397044">UZ</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1157671939">UZB</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="790436953">998</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="540028729">
+         <cc:name class="java.lang.String" ref-id="996956081">US Virgin Islands</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1173439473">VI</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1654892310">VIR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1714341873">1 340</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="155767712">
+         <cc:name class="java.lang.String" ref-id="205369891">Uruguay</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="645537308">UY</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="458150912">URY</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1413503489">598</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1289036509">
+         <cc:name class="java.lang.String" ref-id="1021575827">United States</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="493166624">US</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1512055795">USA</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1947751614">1</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1768145277">
+         <cc:name class="java.lang.String" ref-id="338963353">United Kingdom</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="1830442027">GB</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1535904514">GBR</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1193729858">44</cc:internationalDialingCode>
+      </cc:countryCode>
+      <cc:countryCode class="com.anosym.utilities.geocode.CountryCode" ref-id="1225493132">
+         <cc:name class="java.lang.String" ref-id="347411147">United Arab Emirates</cc:name>
+         <cc:isoCode class="java.lang.String" ref-id="2078595083">AE</cc:isoCode>
+         <cc:isoCode2 class="java.lang.String" ref-id="1831074232">ARE</cc:isoCode2>
+         <cc:internationalDialingCode class="java.lang.String" ref-id="1423955714">971</cc:internationalDialingCode>
+      </cc:countryCode>
+   </cc:countryCodes>
+</cc:CountryCodes>
