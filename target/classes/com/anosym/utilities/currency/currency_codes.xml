@@ -1956,7 +1956,7 @@
             <cc:internationalDialingCode class="java.lang.String" ref-id="1442553523">1</cc:internationalDialingCode>
          </cc:countryCode>
          <cc:currencyName class="java.lang.String" ref-id="2054170078">US Dollar r (Same day)</cc:currencyName>
-         <cc:currencySymbol class="java.lang.String" ref-id="1489391774">USS</cc:currencySymbol>
+         <cc:currencySymbol class="java.lang.String" ref-id="1489391774">USD</cc:currencySymbol>
          <cc:currencyIsoCode class="java.lang.String" ref-id="1138156186">998</cc:currencyIsoCode>
       </cc:currencyCodes>
       <cc:currencyCodes class="com.anosym.utilities.currency.CurrencyCode" ref-id="1354174273">
@@ -2209,7 +2209,7 @@
             <cc:internationalDialingCode class="java.lang.String" ref-id="1112138081">263</cc:internationalDialingCode>
          </cc:countryCode>
          <cc:currencyName class="java.lang.String" ref-id="7063879">Zimbabwe Dollar</cc:currencyName>
-         <cc:currencySymbol class="java.lang.String" ref-id="611013768">ZWD</cc:currencySymbol>
+         <cc:currencySymbol class="java.lang.String" ref-id="611013768">USD</cc:currencySymbol>
          <cc:currencyIsoCode class="java.lang.String" ref-id="41598822">716</cc:currencyIsoCode>
       </cc:currencyCodes>
    </cc:currencyCodes>

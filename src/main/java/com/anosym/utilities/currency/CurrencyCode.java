@@ -97,4 +97,8 @@ public class CurrencyCode {
   public String toString() {
     return currencySymbol;
   }
+
+  public String toFullString() {
+    return "CurrencyCode{" + "countryCode=" + countryCode + ", currencyName=" + currencyName + ", currencySymbol=" + currencySymbol + ", currencyIsoCode=" + currencyIsoCode + '}';
+  }
 }

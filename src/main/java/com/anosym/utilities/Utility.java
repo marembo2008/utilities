@@ -1141,7 +1141,7 @@ public final class Utility {
         VElement root = doc.getRootElement();
         VElement status = root.findChild("status");
         System.out.println(doc.toXmlString());
-        if (status != null && "OK".equalsIgnoreCase(status.getContent())) {
+        if (status != null && "OK".equalsIgnoreCase(status.toContent())) {
           //good result
           VElement anyResult = root.findChild("result");
           if (anyResult != null) {
