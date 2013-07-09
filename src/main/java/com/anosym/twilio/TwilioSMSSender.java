@@ -16,9 +16,32 @@ import java.util.Map;
  * @author kenn
  */
 public class TwilioSMSSender {
-    String ACCOUNT_SID = TwilioConfig.ACCOUNT_SID;
-    String AUTH_TOKEN = TwilioConfig.AUTH_TOKEN;
-    String FROM = TwilioConfig.FROM_PHONENUMBER;
+    private static TwilioConfig CONFIG;
+    String ACCOUNT_SID = CONFIG.ACCOUNT_SID;
+    String AUTH_TOKEN = CONFIG.AUTH_TOKEN;
+    String FROM = CONFIG.FROM_PHONENUMBER;
+    private static TwilioSMSSender sender;
+    
+    private TwilioSMSSender(TwilioConfig config){
+        this.CONFIG = config;
+    }
+    
+    public TwilioSMSSender getInstance() throws IllegalStateException{
+        if  (sender == null){
+            throw new IllegalStateException("Configuration object is not initialized");
+        }
+        return sender;
+    }
+    
+    public TwilioSMSSender getInstance(TwilioConfig config){
+        if( sender == null){
+            sender = new TwilioSMSSender(config);
+        }
+        return sender;
+    }
+    
+    
+    
     public boolean sendSMS(String number, String msg){
     TwilioRestClient client = new TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN);
 // Build a filter for the SmsList
