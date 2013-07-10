@@ -17,7 +17,7 @@ public class VerificationCodeGenerator {
     private static String alphabet = "POIUYTREWQASDFGHJKLMNBVCXZqwertyuiopasdfghjklzxcvbnm";
     private static String nums = "7418529630";
     private static char[] chars = (alphabet.concat(nums)).toCharArray();
-    private static int length = 20;
+    private static int length = 50;
     
     private static SecureRandom random = new SecureRandom();
 

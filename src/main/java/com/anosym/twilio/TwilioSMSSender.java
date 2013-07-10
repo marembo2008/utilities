@@ -4,12 +4,15 @@
  */
 package com.anosym.twilio;
 
+import com.anosym.utilities.mail.EmailSender;
 import com.twilio.sdk.TwilioRestClient;
 import com.twilio.sdk.TwilioRestException;
 import com.twilio.sdk.resource.factory.SmsFactory;
 import com.twilio.sdk.resource.instance.Sms;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -55,8 +58,10 @@ public class TwilioSMSSender {
         Sms message = null;
         try {
             message = messageFactory.create(params);
+             Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.INFO, "Sent SMS: {0}",number + ", "+msg+ ", "+message);
         } catch (TwilioRestException e) {
             e.printStackTrace();
+            Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.SEVERE, "Send SMS FAIL: {0}", number + ", "+msg+ ", "+message);
             return false;
         }
         System.out.println(message.getSid());
