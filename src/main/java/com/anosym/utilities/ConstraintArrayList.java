@@ -21,6 +21,28 @@ public class ConstraintArrayList<T> extends SerializableArrayList<T> {
     }
   }
 
+  /**
+   * This constraint list may require population from a list whose items may fail to constraint
+   * validation, but must be present. In this respect therefore, the lists will be added to this
+   * constraint list before the constraint is applied after creation of this list.
+   *
+   * @param c
+   * @param constrainCurrentList
+   * @param constraint
+   */
+  public ConstraintArrayList(Collection<? extends T> c, boolean constrainCurrentList, Constraint<T> constraint) {
+    if (!constrainCurrentList) {
+      if (c != null && !c.isEmpty() && !this.doAddAll(c)) {
+        throw new IllegalArgumentException("Invalid List Elements");
+      }
+    } else {
+      this.constraint = constraint;
+      if (c != null && !c.isEmpty() && !this.doAddAll(c)) {
+        throw new IllegalArgumentException("Invalid List Elements");
+      }
+    }
+  }
+
   public ConstraintArrayList(Constraint<T> constraint) {
     super();
     this.constraint = constraint;
