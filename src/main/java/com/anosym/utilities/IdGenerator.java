@@ -22,7 +22,6 @@ public final class IdGenerator {
     Long id = null;
     String epoch = System.getProperty(ID_GENERATOR_EPOCH);
     if (epoch != null && !epoch.isEmpty()) {
-      System.out.println(ID_GENERATOR_EPOCH + ": " + epoch);
       Calendar c = FormattedCalendar.parseISODate(epoch);
       if (c != null) {
         id = System.nanoTime() - c.getTimeInMillis();
@@ -59,7 +58,6 @@ public final class IdGenerator {
   public static Long generateShortId() {
     String epoch = System.getProperty(ID_GENERATOR_EPOCH);
     if (epoch != null && !epoch.isEmpty()) {
-      System.out.println(ID_GENERATOR_EPOCH + ": " + epoch);
       Calendar c = FormattedCalendar.parseISODate(epoch);
       if (c != null) {
         return (System.currentTimeMillis() - c.getTimeInMillis());
@@ -159,7 +157,6 @@ public final class IdGenerator {
           synchronized (sets) {
             Long id = generateId();
             sets.add(id);
-            System.out.println(id);
           }
         }
         synchronized (sets) {
@@ -169,9 +166,4 @@ public final class IdGenerator {
     }).start();
   }
 
-  public static void main(String[] args) {
-    for (int i = 0; i < 10; i++) {
-      System.out.println(generateLongId(8));
-    }
-  }
 }

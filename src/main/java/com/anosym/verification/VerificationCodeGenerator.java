@@ -5,7 +5,6 @@
 package com.anosym.verification;
 
 import java.security.SecureRandom;
-import java.util.Random;
 
 /**
  *
@@ -13,43 +12,36 @@ import java.util.Random;
  */
 public class VerificationCodeGenerator {
 
-    private static double FOUR_DIGIT_MAX = Math.pow(10, 4);
-    private static String alphabet = "POIUYTREWQASDFGHJKLMNBVCXZqwertyuiopasdfghjklzxcvbnm";
-    private static String nums = "7418529630";
-    private static char[] chars = (alphabet.concat(nums)).toCharArray();
-    private static int length = 50;
-    
-    private static SecureRandom random = new SecureRandom();
+  private static final double FOUR_DIGIT_MAX = Math.pow(10, 4);
+  private static final String ALPHABET = "POIUYTREWQASDFGHJKLMNBVCXZqwertyuiopasdfghjklzxcvbnm";
+  private static final String NUMS = "7418529630";
+  private static final char[] CHARS = (ALPHABET.concat(NUMS)).toCharArray();
+  private static final int LENGTH = 50;
+  private static final SecureRandom RANDOM = new SecureRandom();
 
-    public static long getFourDigitCode() {        
-        double val = random.nextDouble() * FOUR_DIGIT_MAX;
-        return Math.round(val);
-    }
+  public static long getFourDigitCode() {
+    double val = RANDOM.nextDouble() * FOUR_DIGIT_MAX;
+    return Math.round(val);
+  }
 
-    public static String getRandomAlphaNumString() {
-        return getRandomAlphaNumString(chars, length);
-    }
+  public static String getRandomAlphaNumString() {
+    return getRandomAlphaNumString(CHARS, LENGTH);
+  }
 
-    public static String getRandomAlphaNumString(char[] allowed) {
-        return getRandomAlphaNumString(allowed, length);
-    }
+  public static String getRandomAlphaNumString(char[] allowed) {
+    return getRandomAlphaNumString(allowed, LENGTH);
+  }
 
-    public static String getRandomAlphaNumString(int len) {
-        return getRandomAlphaNumString(chars, len);
-    }
+  public static String getRandomAlphaNumString(int len) {
+    return getRandomAlphaNumString(CHARS, len);
+  }
 
-    public static String getRandomAlphaNumString(char[] allowed, int len) {
-        StringBuilder sb = new StringBuilder(len);
-        for (int i = 0; i < len; i++) {
-            char c = allowed[random.nextInt(allowed.length)];
-            sb.append(c);
-        }        
-        return sb.toString();
+  public static String getRandomAlphaNumString(char[] allowed, int len) {
+    StringBuilder sb = new StringBuilder(len);
+    for (int i = 0; i < len; i++) {
+      char c = allowed[RANDOM.nextInt(allowed.length)];
+      sb.append(c);
     }
-
-    public static void main(String[] args) {
-        for(int i =0; i< 15; i++){
-            System.out.println(getRandomAlphaNumString(50));
-        }
-    }
+    return sb.toString();
+  }
 }

@@ -4,7 +4,6 @@
  */
 package com.anosym.twilio;
 
-import com.anosym.utilities.mail.EmailSender;
 import com.twilio.sdk.TwilioRestClient;
 import com.twilio.sdk.TwilioRestException;
 import com.twilio.sdk.resource.factory.SmsFactory;
@@ -19,53 +18,47 @@ import java.util.logging.Logger;
  * @author kenn
  */
 public class TwilioSMSSender {
-    private static TwilioConfig CONFIG;
-    String ACCOUNT_SID = CONFIG.ACCOUNT_SID;
-    String AUTH_TOKEN = CONFIG.AUTH_TOKEN;
-    String FROM = CONFIG.FROM_PHONENUMBER;
-    private static TwilioSMSSender sender;
-    
-    private TwilioSMSSender(TwilioConfig config){
-        this.CONFIG = config;
+
+  private TwilioConfig config;
+  private static TwilioSMSSender sender;
+
+  private TwilioSMSSender(TwilioConfig config) {
+    this.config = config;
+  }
+
+  private TwilioSMSSender() {
+    this.config = TwilioConfigUtil.getTwilioConfig();//load default;
+  }
+
+  public static TwilioSMSSender getInstance() throws IllegalStateException {
+    if (sender == null) {
+      sender = new TwilioSMSSender();
     }
-    
-    public TwilioSMSSender getInstance() throws IllegalStateException{
-        if  (sender == null){
-            throw new IllegalStateException("Configuration object is not initialized");
-        }
-        return sender;
+    return sender;
+  }
+
+  public static TwilioSMSSender getInstance(TwilioConfig config) {
+    if (sender == null) {
+      sender = new TwilioSMSSender(config);
     }
-    
-    public TwilioSMSSender getInstance(TwilioConfig config){
-        if( sender == null){
-            sender = new TwilioSMSSender(config);
-        }
-        return sender;
+    return sender;
+  }
+
+  public boolean sendSMS(String number, String msg) {
+    TwilioRestClient client = new TwilioRestClient(config.getAccountSid(), config.getAuthToken());
+    Map<String, String> params = new HashMap<String, String>();
+    params.put("Body", msg);
+    params.put("To", number);
+    params.put("From", config.getFromPhoneNumber());
+    SmsFactory messageFactory = client.getAccount().getSmsFactory();
+    Sms message = null;
+    try {
+      message = messageFactory.create(params);
+      Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.INFO, "Sent SMS: {0}", number + ", " + msg + ", " + message);
+    } catch (TwilioRestException e) {
+      Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.SEVERE, "Send SMS FAIL: {0}", number + ", " + msg + ", " + message);
+      return false;
     }
-    
-    
-    
-    public boolean sendSMS(String number, String msg){
-    TwilioRestClient client = new TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN);
-// Build a filter for the SmsList
-        Map<String, String> params = new HashMap<String, String>();
-        
-        params.put("Body", "testing");
-        params.put("To", number);
-        params.put("From", FROM);
-        
-        SmsFactory messageFactory = client.getAccount().getSmsFactory();
-        Sms message = null;
-        try {
-            message = messageFactory.create(params);
-             Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.INFO, "Sent SMS: {0}",number + ", "+msg+ ", "+message);
-        } catch (TwilioRestException e) {
-            e.printStackTrace();
-            Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.SEVERE, "Send SMS FAIL: {0}", number + ", "+msg+ ", "+message);
-            return false;
-        }
-        System.out.println(message.getSid());
-return true;
-        
-}
+    return true;
+  }
 }

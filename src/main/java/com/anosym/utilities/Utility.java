@@ -6,6 +6,7 @@ package com.anosym.utilities;
 
 import com.anosym.utilities.currency.CurrencyCode;
 import com.anosym.utilities.currency.CurrencyCodes;
+import com.anosym.utilities.formatter.CurrencyFormatter;
 import com.anosym.utilities.geocode.CountryCode;
 import com.anosym.utilities.geocode.CountryCodes;
 import com.anosym.utilities.geocode.CountryIpMapping;
@@ -31,6 +32,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -1384,8 +1386,19 @@ public final class Utility {
     }
   }
 
+  public static String formatCurrencyValue(BigDecimal value) {
+    value = value.setScale(2);
+    CurrencyFormatter cf = new CurrencyFormatter(2);
+    return cf.format(value);
+  }
+
+  public static BigDecimal formatCurrencyValue(String value) {
+    value = value.replaceAll(",\\W+", "");
+    return new BigDecimal(value);
+  }
+
   public static void main(String[] args) {
-    CountryCodes codes = loadCountryCodes();
-    System.out.println(codes);
+    String val = "45, 899.00";
+    System.err.println(formatCurrencyValue(val));
   }
 }
