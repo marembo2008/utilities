@@ -30,14 +30,14 @@ public class TwilioSMSSender {
     this.config = TwilioConfigUtil.getTwilioConfig();//load default;
   }
 
-  public TwilioSMSSender getInstance() throws IllegalStateException {
+  public static TwilioSMSSender getInstance() throws IllegalStateException {
     if (sender == null) {
       sender = new TwilioSMSSender();
     }
     return sender;
   }
 
-  public TwilioSMSSender getInstance(TwilioConfig config) {
+  public static TwilioSMSSender getInstance(TwilioConfig config) {
     if (sender == null) {
       sender = new TwilioSMSSender(config);
     }

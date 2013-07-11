@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 public final class TwilioConfigUtil {
 
   private static Calendar LAST_UPDATE_CHECK;
-  private static final File TWILIO_CONFIG_PATH = new File(Utility.getCurrentWorkingDirectory(), "twilio.xml");
+  private static final File TWILIO_CONFIG_PATH = new File(System.getProperty("twilio.config", Utility.getCurrentWorkingDirectory()), "twilio.xml");
   private static TwilioConfig twilioConfig;
 
   static {
