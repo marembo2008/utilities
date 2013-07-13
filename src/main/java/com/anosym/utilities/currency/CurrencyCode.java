@@ -5,13 +5,15 @@
 package com.anosym.utilities.currency;
 
 import com.anosym.utilities.geocode.CountryCode;
+import java.io.Serializable;
 
 /**
  *
  * @author marembo
  */
-public class CurrencyCode {
+public class CurrencyCode implements Serializable {
 
+  private static final long serialVersionUID = 128282922920L;
   private CountryCode countryCode;
   private String currencyName;
   private String currencySymbol;

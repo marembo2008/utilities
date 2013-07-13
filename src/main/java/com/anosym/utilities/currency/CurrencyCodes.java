@@ -6,6 +6,7 @@ package com.anosym.utilities.currency;
 
 import com.anosym.vjax.annotations.CollectionElement;
 import com.anosym.vjax.annotations.Namespace;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,8 +15,9 @@ import java.util.List;
  * @author marembo
  */
 @Namespace(prefix = "cc", uri = "http://www.flemax.utility.com/currency")
-public class CurrencyCodes {
+public class CurrencyCodes implements Serializable {
 
+  private static final long serialVersionUID = 242892420492092402L;
   private List<CurrencyCode> currencyCodes;
 
   public CurrencyCodes() {
