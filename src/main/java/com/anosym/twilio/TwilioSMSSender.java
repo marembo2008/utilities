@@ -45,20 +45,20 @@ public class TwilioSMSSender {
   }
 
   public boolean sendSMS(String number, String msg) {
-//    TwilioRestClient client = new TwilioRestClient(config.getAccountSid(), config.getAuthToken());
-//    Map<String, String> params = new HashMap<String, String>();
-//    params.put("Body", msg);
-//    params.put("To", number);
-//    params.put("From", config.getFromPhoneNumber());
-//    SmsFactory messageFactory = client.getAccount().getSmsFactory();
-//    Sms message = null;
-//    try {
-//      message = messageFactory.create(params);
-//      Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.INFO, "Sent SMS: {0}", number + ", " + msg + ", " + message);
-//    } catch (TwilioRestException e) {
-//      Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.SEVERE, "Send SMS FAIL: {0}", number + ", " + msg + ", " + message);
-//      return false;
-//    }
+    TwilioRestClient client = new TwilioRestClient(config.getAccountSid(), config.getAuthToken());
+    Map<String, String> params = new HashMap<String, String>();
+    params.put("Body", msg);
+    params.put("To", number);
+    params.put("From", config.getFromPhoneNumber());
+    SmsFactory messageFactory = client.getAccount().getSmsFactory();
+    Sms message = null;
+    try {
+      message = messageFactory.create(params);
+      Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.INFO, "Sent SMS: {0}", number + ", " + msg + ", " + message);
+    } catch (TwilioRestException e) {
+      Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.SEVERE, "Send SMS FAIL: {0}", number + ", " + msg + ", " + message);
+      return false;
+    }
     return true;
   }
 }
