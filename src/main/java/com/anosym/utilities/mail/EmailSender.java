@@ -4,6 +4,9 @@
  */
 package com.anosym.utilities.mail;
 
+import com.anosym.vjax.VMarshaller;
+import com.anosym.vjax.VXMLBindingException;
+import com.anosym.vjax.xml.VDocument;
 import java.io.File;
 import java.util.Properties;
 import java.util.logging.Level;
@@ -28,8 +31,23 @@ import javax.mail.internet.MimeMultipart;
  */
 public final class EmailSender {
 
+  private static final String EMAIL_CONFIG_PATH = "email-config.xml";
   private Properties props;
   private EmailSetting setting = null;
+
+  static {
+    EmailSetting setting = new EmailSetting("sourceAddress", "password", "serverUrl", 0, true);
+    File path = new File(System.getProperty(EMAIL_CONFIG_PATH, System.getProperty("user.home")), "email-settings.xml");
+    if (!path.exists()) {
+      try {
+        VDocument doc = new VMarshaller<EmailSetting>().marshallDocument(setting);
+        doc.setDocumentName(path);
+        doc.writeDocument();
+      } catch (VXMLBindingException ex) {
+        Logger.getLogger(EmailSender.class.getName()).log(Level.SEVERE, null, ex);
+      }
+    }
+  }
 
   public EmailSender() {
     props = new Properties();
@@ -53,6 +71,27 @@ public final class EmailSender {
 
   }
 
+  /**
+   * The configurations must be available to be loaded based on the {@link #EMAIL_CONFIG_PATH}. By
+   * default this path is user.home
+   * <code>user.home</code>
+   *
+   * @return
+   */
+  public static EmailSender getInstance() {
+    try {
+      File path = new File(System.getProperty(EMAIL_CONFIG_PATH, System.getProperty("user.home")), "email-settings.xml");
+      VDocument doc = VDocument.parseDocument(path);
+      EmailSetting emailSetting = new VMarshaller<EmailSetting>().unmarshall(doc);
+      if (emailSetting.getSourceAddress().equals("sourceAddress")) {
+        throw new IllegalArgumentException("Email setting has not been specified at this location:" + path.getAbsolutePath());
+      }
+      return new EmailSender(emailSetting);
+    } catch (Exception e) {
+      throw new RuntimeException(e);
+    }
+  }
+
   public static EmailSender getGmailInstance() {
     return new EmailSender();
   }
@@ -67,11 +106,11 @@ public final class EmailSender {
       public void run() {
         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
-                  @Override
-                  protected PasswordAuthentication getPasswordAuthentication() {
-                    return new PasswordAuthentication(setting.getSourceAddress(), setting.getPassword());
-                  }
-                });
+          @Override
+          protected PasswordAuthentication getPasswordAuthentication() {
+            return new PasswordAuthentication(setting.getSourceAddress(), setting.getPassword());
+          }
+        });
 
         try {
           Message message = new MimeMessage(session);
@@ -96,11 +135,11 @@ public final class EmailSender {
       public void run() {
         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
-                  @Override
-                  protected PasswordAuthentication getPasswordAuthentication() {
-                    return new PasswordAuthentication(setting.getSourceAddress(), setting.getPassword());
-                  }
-                });
+          @Override
+          protected PasswordAuthentication getPasswordAuthentication() {
+            return new PasswordAuthentication(setting.getSourceAddress(), setting.getPassword());
+          }
+        });
 
         try {
           Message message = new MimeMessage(session);
@@ -122,11 +161,11 @@ public final class EmailSender {
   public void sendMail(final MailMessage mailMessage, final MailCallback callback) {
     Session session = Session.getInstance(props,
             new javax.mail.Authenticator() {
-              @Override
-              protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(setting.getSourceAddress(), setting.getPassword());
-              }
-            });
+      @Override
+      protected PasswordAuthentication getPasswordAuthentication() {
+        return new PasswordAuthentication(setting.getSourceAddress(), setting.getPassword());
+      }
+    });
 
     try {
       Message message = new MimeMessage(session);
