@@ -29,7 +29,7 @@ public class TwilioSMSSenderTest {
   @Test
   public void testSendSMS() {
     String twilioConfig = "/home/marembo";
-    System.setProperty("twilio.config", twilioConfig);
+    System.setProperty(TwilioSMSSender.TWILIO_CONFIG_PROPERTY, twilioConfig);
     TwilioSMSSender sender = TwilioSMSSender.getInstance();
     boolean result = sender.sendSMS("+254726153577", "Hello this is a twilio sms test");
     assertTrue(result);

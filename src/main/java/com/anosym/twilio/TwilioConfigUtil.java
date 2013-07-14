@@ -4,7 +4,6 @@
  */
 package com.anosym.twilio;
 
-import com.anosym.utilities.Utility;
 import com.anosym.vjax.VMarshaller;
 import com.anosym.vjax.VXMLBindingException;
 import com.anosym.vjax.xml.VDocument;
@@ -19,16 +18,17 @@ import java.util.logging.Logger;
  */
 public final class TwilioConfigUtil {
 
+  public static final String TWILIO_CONFIG_PROPERTY = "com.anosym.twilio.config";
   private static Calendar LAST_UPDATE_CHECK;
-  private static final File TWILIO_CONFIG_PATH = new File(System.getProperty("twilio.config", Utility.getCurrentWorkingDirectory()), "twilio.xml");
   private static TwilioConfig twilioConfig;
 
   static {
     twilioConfig = new TwilioConfig("replace_with_account_side", "update_with_account_oauth_token", "replace_with_from_phone_number");
-    if (!TWILIO_CONFIG_PATH.exists()) {
+    File twilioConfigPath = new File(System.getProperty(TWILIO_CONFIG_PROPERTY, System.getProperty("user.home")), "twilio.xml");
+    if (!twilioConfigPath.exists()) {
       try {
         VDocument doc = new VMarshaller<TwilioConfig>().marshallDocument(twilioConfig);
-        doc.setDocumentName(TWILIO_CONFIG_PATH);
+        doc.setDocumentName(twilioConfigPath);
         doc.writeDocument();
       } catch (VXMLBindingException ex) {
         Logger.getLogger(TwilioConfigUtil.class.getName()).log(Level.SEVERE, null, ex);
@@ -41,7 +41,8 @@ public final class TwilioConfigUtil {
     boolean load = LAST_UPDATE_CHECK == null || (now.getTimeInMillis() - LAST_UPDATE_CHECK.getTimeInMillis()) > 3600;
     if (load) {
       try {
-        VDocument doc = VDocument.parseDocument(TWILIO_CONFIG_PATH);
+        File twilioConfigPath = new File(System.getProperty(TWILIO_CONFIG_PROPERTY, System.getProperty("user.home")), "twilio.xml");
+        VDocument doc = VDocument.parseDocument(twilioConfigPath);
         twilioConfig = new VMarshaller<TwilioConfig>().unmarshall(doc);
       } catch (VXMLBindingException ex) {
         Logger.getLogger(TwilioConfigUtil.class.getName()).log(Level.SEVERE, null, ex);

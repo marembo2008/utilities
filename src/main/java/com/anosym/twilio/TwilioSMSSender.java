@@ -19,6 +19,10 @@ import java.util.logging.Logger;
  */
 public class TwilioSMSSender {
 
+  /**
+   * This is just to provide an easire access to the loading of the configs.
+   */
+  public static final String TWILIO_CONFIG_PROPERTY = TwilioConfigUtil.TWILIO_CONFIG_PROPERTY;
   private TwilioConfig config;
   private static TwilioSMSSender sender;
 

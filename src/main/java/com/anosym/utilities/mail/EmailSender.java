@@ -31,7 +31,7 @@ import javax.mail.internet.MimeMultipart;
  */
 public final class EmailSender {
 
-  private static final String EMAIL_CONFIG_PATH = "email-config.xml";
+  private static final String EMAIL_CONFIG_PATH = "com.anosym.email.setting";
   private Properties props;
   private EmailSetting setting = null;
 
