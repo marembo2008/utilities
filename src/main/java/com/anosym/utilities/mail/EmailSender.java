@@ -160,57 +160,122 @@ public final class EmailSender {
   }
 
   public void sendMail(final MailMessage mailMessage, final MailCallback callback) {
-    Session session = Session.getInstance(props,
-            new javax.mail.Authenticator() {
+    new Thread() {
       @Override
-      protected PasswordAuthentication getPasswordAuthentication() {
-        return new PasswordAuthentication(setting.getSourceAddress(), setting.getPassword());
-      }
-    });
+      public void run() {
+        Session session = Session.getInstance(props,
+                new javax.mail.Authenticator() {
+          @Override
+          protected PasswordAuthentication getPasswordAuthentication() {
+            return new PasswordAuthentication(setting.getSourceAddress(), setting.getPassword());
+          }
+        });
 
-    try {
-      Message message = new MimeMessage(session);
-      message.setFrom(new InternetAddress(setting.getSourceAddress()));
-      message.setRecipients(Message.RecipientType.TO,
-              InternetAddress.parse(mailMessage.getToAddress()));
-      if (mailMessage.getCcAddress() != null) {
-        for (String cc : mailMessage.getCcAddress()) {
-          message.setRecipients(Message.RecipientType.CC,
-                  InternetAddress.parse(cc));
+        try {
+          Message message = new MimeMessage(session);
+          message.setFrom(new InternetAddress(setting.getSourceAddress()));
+          message.setRecipients(Message.RecipientType.TO,
+                  InternetAddress.parse(mailMessage.getToAddress()));
+          if (mailMessage.getCcAddress() != null) {
+            for (String cc : mailMessage.getCcAddress()) {
+              message.setRecipients(Message.RecipientType.CC,
+                      InternetAddress.parse(cc));
+            }
+          }
+          if (mailMessage.getBccAddress() != null) {
+            for (String bcc : mailMessage.getBccAddress()) {
+              message.setRecipients(Message.RecipientType.BCC,
+                      InternetAddress.parse(bcc));
+            }
+          }
+          message.setSubject(mailMessage.getSubject());
+          //body part
+          MimeBodyPart txtMessage = new MimeBodyPart();
+          txtMessage.setText(mailMessage.getMessage());
+          //create multipart message
+          Multipart mp = new MimeMultipart();
+          mp.addBodyPart(txtMessage);
+          if (mailMessage.getAttachments() != null) {
+            for (String file : mailMessage.getAttachments()) {
+              MimeBodyPart attach = new MimeBodyPart();
+              DataSource attachsource = new FileDataSource(file);
+              attach.setDataHandler(new DataHandler(attachsource));
+              attach.setFileName(new File(file).getName());
+              mp.addBodyPart(attach);
+            }
+          }
+          message.setContent(mp);
+          Transport.send(message);
+          if (callback != null) {
+            callback.onSent();
+          }
+        } catch (Exception e) {
+          Logger.getLogger(EmailSender.class.getName()).log(Level.SEVERE, null, e);
+          if (callback != null) {
+            callback.onFailure();
+          }
         }
       }
-      if (mailMessage.getBccAddress() != null) {
-        for (String bcc : mailMessage.getBccAddress()) {
-          message.setRecipients(Message.RecipientType.BCC,
-                  InternetAddress.parse(bcc));
+    }.start();
+  }
+
+  public void sendHtmlMail(final MailMessage mailMessage, final MailCallback callback) {
+    new Thread() {
+      @Override
+      public void run() {
+        Session session = Session.getInstance(props,
+                new javax.mail.Authenticator() {
+          @Override
+          protected PasswordAuthentication getPasswordAuthentication() {
+            return new PasswordAuthentication(setting.getSourceAddress(), setting.getPassword());
+          }
+        });
+
+        try {
+          Message message = new MimeMessage(session);
+          message.setFrom(new InternetAddress(setting.getSourceAddress()));
+          message.setRecipients(Message.RecipientType.TO,
+                  InternetAddress.parse(mailMessage.getToAddress()));
+          if (mailMessage.getCcAddress() != null) {
+            for (String cc : mailMessage.getCcAddress()) {
+              message.setRecipients(Message.RecipientType.CC,
+                      InternetAddress.parse(cc));
+            }
+          }
+          if (mailMessage.getBccAddress() != null) {
+            for (String bcc : mailMessage.getBccAddress()) {
+              message.setRecipients(Message.RecipientType.BCC,
+                      InternetAddress.parse(bcc));
+            }
+          }
+          message.setSubject(mailMessage.getSubject());
+          //body part
+          MimeBodyPart txtMessage = new MimeBodyPart();
+          txtMessage.setContent(mailMessage.getMessage(), "text/html");
+          //create multipart message
+          Multipart mp = new MimeMultipart();
+          mp.addBodyPart(txtMessage);
+          if (mailMessage.getAttachments() != null) {
+            for (String file : mailMessage.getAttachments()) {
+              MimeBodyPart attach = new MimeBodyPart();
+              DataSource attachsource = new FileDataSource(file);
+              attach.setDataHandler(new DataHandler(attachsource));
+              attach.setFileName(new File(file).getName());
+              mp.addBodyPart(attach);
+            }
+          }
+          message.setContent(mp);
+          Transport.send(message);
+          if (callback != null) {
+            callback.onSent();
+          }
+        } catch (Exception e) {
+          Logger.getLogger(EmailSender.class.getName()).log(Level.SEVERE, null, e);
+          if (callback != null) {
+            callback.onFailure();
+          }
         }
       }
-      message.setSubject(mailMessage.getSubject());
-      //body part
-      MimeBodyPart txtMessage = new MimeBodyPart();
-      txtMessage.setText(mailMessage.getMessage());
-      //create multipart message
-      Multipart mp = new MimeMultipart();
-      mp.addBodyPart(txtMessage);
-      if (mailMessage.getAttachments() != null) {
-        for (String file : mailMessage.getAttachments()) {
-          MimeBodyPart attach = new MimeBodyPart();
-          DataSource attachsource = new FileDataSource(file);
-          attach.setDataHandler(new DataHandler(attachsource));
-          attach.setFileName(new File(file).getName());
-          mp.addBodyPart(attach);
-        }
-      }
-      message.setContent(mp);
-      Transport.send(message);
-      if (callback != null) {
-        callback.onSent();
-      }
-    } catch (Exception e) {
-      Logger.getLogger(EmailSender.class.getName()).log(Level.SEVERE, null, e);
-      if (callback != null) {
-        callback.onFailure();
-      }
-    }
+    }.start();
   }
 }
