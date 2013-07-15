@@ -4,13 +4,14 @@
  */
 package com.anosym.utilities.mail;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  *
  * @author marembo
  */
-public class MailMessage {
+public class MailMessage implements Serializable {
 
   private String toAddress;
   private List<String> ccAddress;
