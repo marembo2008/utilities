@@ -32,6 +32,10 @@ public class TwilioSMSSender {
 
   private TwilioSMSSender() {
     this.config = TwilioConfigUtil.getTwilioConfig();//load default;
+    if (this.config == null) {
+      throw new RuntimeException("twilio config has not been specified: "
+              + "Twilio config path=" + System.getProperty(TWILIO_CONFIG_PROPERTY, System.getProperty("user.home")));
+    }
   }
 
   public static TwilioSMSSender getInstance() throws IllegalStateException {
