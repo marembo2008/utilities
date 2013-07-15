@@ -31,13 +31,14 @@ import javax.mail.internet.MimeMultipart;
  */
 public final class EmailSender {
 
-  private static final String EMAIL_CONFIG_PATH = "email-config.xml";
+  public static final String EMAIL_CONFIG_PATH = "com.anosym.email.setting";
   private Properties props;
   private EmailSetting setting = null;
 
   static {
     EmailSetting setting = new EmailSetting("sourceAddress", "password", "serverUrl", 0, true);
     File path = new File(System.getProperty(EMAIL_CONFIG_PATH, System.getProperty("user.home")), "email-settings.xml");
+    Logger.getLogger(EmailSender.class.getName()).log(Level.INFO, "EMAIL_CONFIG_PATH: {0}", path.getAbsolutePath());
     if (!path.exists()) {
       try {
         VDocument doc = new VMarshaller<EmailSetting>().marshallDocument(setting);
