@@ -14,8 +14,11 @@ import java.util.Locale;
 import java.util.TimeZone;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+<<<<<<< HEAD
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+=======
+>>>>>>> a0dfed982b9c96ff088bb10365c8c1451182476a
 import javax.swing.text.DateFormatter;
 
 /**
@@ -258,6 +261,7 @@ public class FormattedCalendar extends GregorianCalendar implements Serializable
     return newInstance;
   }
 
+<<<<<<< HEAD
   public static Calendar getDateInstance() {
     return getDateInstance(Calendar.getInstance());
   }
@@ -371,6 +375,8 @@ public class FormattedCalendar extends GregorianCalendar implements Serializable
     return dateInstance;
   }
 
+=======
+>>>>>>> a0dfed982b9c96ff088bb10365c8c1451182476a
   public static Calendar parseISODate(String value) {
     //iso date
     Calendar cal = Calendar.getInstance();
