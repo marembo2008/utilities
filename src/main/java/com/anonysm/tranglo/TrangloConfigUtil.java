@@ -4,10 +4,6 @@
  */
 package com.anonysm.tranglo;
 
-import com.anosym.twilio.TwilioConfig;
-import com.anosym.twilio.TwilioConfigUtil;
-import static com.anosym.twilio.TwilioConfigUtil.TWILIO_CONFIG_PROPERTY;
-import com.anosym.utilities.mail.EmailSender;
 import com.anosym.vjax.VMarshaller;
 import com.anosym.vjax.VXMLBindingException;
 import com.anosym.vjax.xml.VDocument;
@@ -21,7 +17,8 @@ import java.util.logging.Logger;
  * @author kenn
  */
 public class TrangloConfigUtil {
-public static final String TRANGLO_CONFIG_PROPERTY = "com.anosym.tranglo.config";
+
+  public static final String TRANGLO_CONFIG_PROPERTY = "com.anosym.tranglo.config";
   private static Calendar LAST_UPDATE_CHECK;
   private static TrangloConfiguration trangloConfig;
 
@@ -58,7 +55,7 @@ public static final String TRANGLO_CONFIG_PROPERTY = "com.anosym.tranglo.config"
     }
   }
 
-  public static TrangloConfiguration getTwilioConfig() {
+  public static TrangloConfiguration getTrangloConfigurations() {
     /**
      * check if we need to update.
      */
