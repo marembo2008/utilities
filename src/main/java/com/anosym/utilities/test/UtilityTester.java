@@ -51,15 +51,10 @@ public class UtilityTester {
   }
 
   public static void main(String[] args) throws Exception {
-    String this_ = "this is a \"this\" this quoted string";
-    Pattern p = Pattern.compile("\"this\"");
-    Matcher m = p.matcher(this_);
-    int i = 0;
-    while (m.find(i)) {
-      System.out.println(m.start());
-      System.out.println(this_.substring(m.start(), m.end()));
-      i = m.end();
-    }
+    String str = "${user.home}";
+    Pattern p = Pattern.compile("^\\$\\{.+\\}$");
+    Matcher m = p.matcher(str);
+    System.out.println("test property= " + m.find());
   }
 
   private static void randomize(List<String> candidates) {

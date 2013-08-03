@@ -5,9 +5,15 @@
 package com.anosym.utilities;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
 import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  *
@@ -53,6 +59,12 @@ public final class IdGenerator {
     Random r = new Random(System.nanoTime());
     int val = (int) Math.pow(10, length - 1);
     return Long.valueOf(r.nextInt(val) + val);
+  }
+
+  public static Long generateSafeAndUniqueId(int length) {
+    //we add simple randomness so that if it were to be called by twi threads at the same time, we are guaranteed of uniques.
+    long val = System.nanoTime() + new Random(System.currentTimeMillis()).nextInt(5);
+    return val % ((long) (Math.pow(10, length)));
   }
 
   public static Long generateShortId() {
@@ -165,5 +177,4 @@ public final class IdGenerator {
       }
     }).start();
   }
-
 }
