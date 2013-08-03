@@ -23,6 +23,11 @@ public class TrangloClient {
     String password = null;
     String transID = null;
     String prodCode = "";
+    
+    public boolean topupAirtime(String phoneNumber, int amount){
+        return sendAirtime(phoneNumber, phoneNumber, amount);
+    }
+    
     public boolean sendAirtime(String from, String to, int amount){
         
         String responseCode = service.requestReload(from, to, prodCode, amount, username, password, transID);
