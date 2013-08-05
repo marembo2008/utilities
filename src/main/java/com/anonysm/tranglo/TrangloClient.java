@@ -6,6 +6,7 @@ package com.anonysm.tranglo;
 
 import com.anonysm.tranglo.service.EPinReload;
 import com.anonysm.tranglo.service.EPinReloadSoap;
+import org.apache.axis2.saaj.util.IDGenerator;
 
 /**
  *
@@ -44,8 +45,6 @@ public class TrangloClient {
     service.ping();
     username = trangloConfig.getUsername();
     password = trangloConfig.getPassword();
-    //TODO confirm with Andre how this should work
-    transID = "12345";
   }
 
   public static TrangloClient getInstance() throws IllegalStateException {
@@ -67,6 +66,7 @@ public class TrangloClient {
   }
 
   public boolean sendAirtime(String from, String to, int amount) {
+    transID = IDGenerator.generateID();
     String responseCode = service.requestReload(from, to, prodCode, amount, username, password, transID);
     System.out.println("response code " + responseCode);
     try {
@@ -82,10 +82,10 @@ public class TrangloClient {
   public static void main(String[] args) {
     TrangloClient tc = TrangloClient.getInstance();
     String tzNumber = "255710437287";
-    String saNumber = "263773437287";
-    String ke = "254721905360";
+    String zmNumber = "263773437287";
+    String saNumber = "27823037082";
     //TODO marembo test these numbers, sa does not work, tz works
-    String from = ke;
+    String from = saNumber;
     String to = from;
     int amount = 5;
     boolean res = tc.sendAirtime(from, to, amount);
