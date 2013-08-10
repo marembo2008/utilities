@@ -6,6 +6,8 @@ package com.anosym.utilities.test;
 
 import com.anosym.vjax.v3.VObjectMarshaller;
 import com.anosym.utilities.Application;
+import com.anosym.utilities.Utility;
+import com.anosym.utilities.currency.CurrencyCodes;
 import java.io.InputStream;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -51,10 +53,9 @@ public class UtilityTester {
   }
 
   public static void main(String[] args) throws Exception {
-    String str = "${user.home}";
-    Pattern p = Pattern.compile("^\\$\\{.+\\}$");
-    Matcher m = p.matcher(str);
-    System.out.println("test property= " + m.find());
+    CurrencyCodes ccs = Utility.getAvailableCurrencyCodes();
+    System.out.println(ccs);
+    System.out.println(ccs.getCurrencyCodes());
   }
 
   private static void randomize(List<String> candidates) {

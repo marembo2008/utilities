@@ -5,7 +5,6 @@
 package com.anosym.utilities.security;
 
 import com.anosym.utilities.Utility;
-import com.anosym.utilities.security.SecurityManager;
 import com.anosym.utilities.security.annotations.Ignore;
 import com.anosym.utilities.security.annotations.PartialSecurity;
 import com.anosym.utilities.security.annotations.Secure;

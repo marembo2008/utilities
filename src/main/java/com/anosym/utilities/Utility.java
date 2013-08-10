@@ -1038,6 +1038,21 @@ public final class Utility {
     return null;
   }
 
+  public static CurrencyCode findCurrencyCodeFromCountryIsoCodeAndCurrencyIsoCode(
+          String countryIsoCode,
+          String currencyIsoCode) {
+    CurrencyCodes codes = loadCurrencyCodes();
+    if (codes != null) {
+      for (CurrencyCode cc : codes.getCurrencyCodes()) {
+        if (cc.getCurrencyIsoCode().equalsIgnoreCase(currencyIsoCode) && (cc.getCountryCode().getIsoCode().equalsIgnoreCase(countryIsoCode)
+                || cc.getCountryCode().getIsoCode2().equalsIgnoreCase(countryIsoCode))) {
+          return cc;
+        }
+      }
+    }
+    return null;
+  }
+
   public static CurrencyCode findCurrencyCodeFromCurrencySymbol(String currencySymbol) {
     CurrencyCodes codes = loadCurrencyCodes();
     if (codes != null) {
