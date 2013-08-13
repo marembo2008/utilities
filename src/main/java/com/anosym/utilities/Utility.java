@@ -1416,4 +1416,18 @@ public final class Utility {
     String val = "45, 899.00";
     System.err.println(formatCurrencyValue(val));
   }
+
+  private static String doCapitalize(String str) {
+    str += " "; //we add this space for 1 letter word.
+    return (Character.toUpperCase(str.charAt(0)) + str.substring(1).toLowerCase()).trim();
+  }
+
+  public static String capitalize(String str) {
+    String[] parts = str.split(" "); //split using spaces
+    String result = "";
+    for (String s : parts) {
+      result += (doCapitalize(s) + " ");
+    }
+    return result.trim();
+  }
 }

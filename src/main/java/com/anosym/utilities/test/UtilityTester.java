@@ -7,6 +7,7 @@ package com.anosym.utilities.test;
 import com.anosym.vjax.v3.VObjectMarshaller;
 import com.anosym.utilities.Application;
 import com.anosym.utilities.Utility;
+import com.anosym.utilities.currency.CurrencyCode;
 import com.anosym.utilities.currency.CurrencyCodes;
 import java.io.InputStream;
 import java.lang.reflect.ParameterizedType;
@@ -53,9 +54,8 @@ public class UtilityTester {
   }
 
   public static void main(String[] args) throws Exception {
-    CurrencyCodes ccs = Utility.getAvailableCurrencyCodes();
-    System.out.println(ccs);
-    System.out.println(ccs.getCurrencyCodes());
+    CurrencyCode cc = Utility.findCurrencyCodeFromCurrencySymbol("USD");
+    System.out.println(cc.getCountryCode() + ": " + cc);
   }
 
   private static void randomize(List<String> candidates) {
