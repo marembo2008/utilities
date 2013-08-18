@@ -4,12 +4,15 @@
  */
 package com.anosym.utilities.geocode.google;
 
+import java.io.Serializable;
+
 /**
  *
  * @author marembo
  */
-public class GoogleLocation {
+public class GoogleLocation implements Serializable {
 
+  private static final long serialVersionUID = 4824482249201L;
   private double lat;
   private double lng;
 
@@ -39,6 +42,6 @@ public class GoogleLocation {
 
   @Override
   public String toString() {
-    return "GoogleLocation{" + "lat=" + lat + ", lng=" + lng + '}';
+    return lat + "," + lng;
   }
 }

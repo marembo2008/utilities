@@ -1038,13 +1038,13 @@ public final class Utility {
     return null;
   }
 
-  public static CurrencyCode findCurrencyCodeFromCountryIsoCodeAndCurrencyIsoCode(
+  public static CurrencyCode findCurrencyCodeFromCountryIsoCodeAndCurrencySymbol(
           String countryIsoCode,
-          String currencyIsoCode) {
+          String currencySymbol) {
     CurrencyCodes codes = loadCurrencyCodes();
     if (codes != null) {
       for (CurrencyCode cc : codes.getCurrencyCodes()) {
-        if (cc.getCurrencyIsoCode().equalsIgnoreCase(currencyIsoCode) && (cc.getCountryCode().getIsoCode().equalsIgnoreCase(countryIsoCode)
+        if (cc.getCurrencySymbol().equalsIgnoreCase(currencySymbol) && (cc.getCountryCode().getIsoCode().equalsIgnoreCase(countryIsoCode)
                 || cc.getCountryCode().getIsoCode2().equalsIgnoreCase(countryIsoCode))) {
           return cc;
         }
@@ -1163,13 +1163,13 @@ public final class Utility {
           VElement anyResult = root.findChild("result");
           if (anyResult != null) {
             VElement formattedAddress = anyResult.findChild("formatted_address");
-            String location = formattedAddress != null ? formattedAddress.getContent() : "";
+            String location = formattedAddress != null ? formattedAddress.toContent() : "";
             VElement neighborhood = anyResult.findChild("address_component", "type", "neighborhood");
             if (neighborhood != null) {
               //find the value
               VElement neighName = neighborhood.findChild("long_name");
               if (neighName != null) {
-                location = neighName.getContent() + " " + location;
+                location = neighName.toContent() + " " + location;
               }
             }
             return location;
@@ -1202,6 +1202,27 @@ public final class Utility {
     return null;
   }
 
+  public static GoogleGeocodeResponse getCurrentLocationFromGoogle(String address) {
+    System.out.println("Address: " + address);
+    if (address != null) {
+      try {
+        address = address.replaceAll("\\W+", "+");
+        //get country from google map
+        String urlStr = "http://maps.googleapis.com/maps/api/geocode/xml?address=" + address + "&sensor=false";
+        URL url = new URL(urlStr);
+        URLConnection urlConnection = url.openConnection();
+        InputStream inn = urlConnection.getInputStream();
+        VDocument doc = VDocument.parseDocument(inn);
+        System.out.println(doc.toXmlString());
+        VObjectMarshaller<GoogleGeocodeResponse> vom = new VObjectMarshaller<GoogleGeocodeResponse>(GoogleGeocodeResponse.class);
+        return vom.unmarshall(doc);
+      } catch (Exception ex) {
+        Logger.getLogger(Utility.class.getName()).log(Level.SEVERE, null, ex);
+      }
+    }
+    return null;
+  }
+
   public static String getCurrentCountryCode(String lat, String lon) {
     System.out.println("lat: " + lat + "\nLon: " + lon);
     if (lat != null && lon != null) {
@@ -1214,7 +1235,7 @@ public final class Utility {
         VDocument doc = VDocument.parseDocument(inn);
         VElement root = doc.getRootElement();
         VElement status = root.findChild("status");
-        if (status != null && "OK".equalsIgnoreCase(status.getContent())) {
+        if (status != null && "OK".equalsIgnoreCase(status.toContent())) {
           //good result
           VElement anyResult = root.findChild("result");
           if (anyResult != null) {
@@ -1223,7 +1244,7 @@ public final class Utility {
               //find the value
               VElement countryIsoCode = countryElement.findChild("short_name");
               if (countryIsoCode != null) {
-                return countryIsoCode.getContent();
+                return countryIsoCode.toContent();
               }
             }
           }
@@ -1248,7 +1269,7 @@ public final class Utility {
         VElement root = doc.getRootElement();
         VElement status = root.findChild("status");
         System.out.println(doc.toXmlString());
-        if (status != null && "OK".equalsIgnoreCase(status.getContent())) {
+        if (status != null && "OK".equalsIgnoreCase(status.toContent())) {
           //good result
           VElement anyResult = root.findChild("result");
           if (anyResult != null) {
@@ -1257,7 +1278,7 @@ public final class Utility {
               //find the value
               VElement countryIsoCode = countryElement.findChild("long_name");
               if (countryIsoCode != null) {
-                return countryIsoCode.getContent();
+                return countryIsoCode.toContent();
               }
             }
           }
@@ -1413,8 +1434,9 @@ public final class Utility {
   }
 
   public static void main(String[] args) {
-    String val = "45, 899.00";
-    System.err.println(formatCurrencyValue(val));
+    String address = "Outering Road, Donholm";
+    GoogleGeocodeResponse ggr = getCurrentLocationFromGoogle(address);
+    System.out.println(VMarshaller.toXmlString(ggr));
   }
 
   private static String doCapitalize(String str) {

@@ -9,6 +9,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import static java.util.Calendar.getInstance;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.TimeZone;
@@ -45,6 +46,14 @@ public class FormattedCalendar extends GregorianCalendar implements Serializable
     }
     String str = year + "-" + mon + "-" + day;
     return str;
+  }
+
+  public static boolean isCurrentYear(Calendar transactionDate) {
+    return getInstance().get(Calendar.YEAR) == ((transactionDate != null) ? transactionDate.get(Calendar.YEAR) : 0);
+  }
+
+  public static boolean isCurrentMonth(Calendar transactionDate) {
+    return getInstance().get(Calendar.MONTH) == ((transactionDate != null) ? transactionDate.get(Calendar.MONTH) : 0);
   }
 
   public FormattedCalendar(int year, int month, int dayOfMonth, int hourOfDay, int minute, int second) {
