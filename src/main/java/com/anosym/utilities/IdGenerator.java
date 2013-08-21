@@ -5,15 +5,9 @@
 package com.anosym.utilities;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Random;
 import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
 
 /**
  *
@@ -80,6 +74,18 @@ public final class IdGenerator {
 
   public static String generateStringId() {
     return generateId().toString();
+  }
+
+  public static String generateIdentifier() {
+    String id = generateId().toString();
+    byte[] bbs = id.getBytes();
+    for (int i = 0; i < bbs.length; i++) {
+      byte b = bbs[i];
+      //randomly add a value that makes the a number or a character without
+      byte c = (byte) ((Math.abs(new Random(System.currentTimeMillis()).nextInt(200)) + b + 48) % 122);
+      bbs[i] = c;
+    }
+    return new String(bbs);
   }
 
   public static Long generateId(Class<?> clazz) {
