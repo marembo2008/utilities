@@ -5,6 +5,7 @@
 package com.anosym.utilities;
 
 import java.math.BigInteger;
+import java.security.SecureRandom;
 import java.util.Calendar;
 import java.util.Random;
 import java.util.Set;
@@ -77,15 +78,22 @@ public final class IdGenerator {
   }
 
   public static String generateIdentifier() {
-    String id = generateId().toString();
-    byte[] bbs = id.getBytes();
-    for (int i = 0; i < bbs.length; i++) {
-      byte b = bbs[i];
-      //randomly add a value that makes the a number or a character without
-      byte c = (byte) ((Math.abs(new Random(System.currentTimeMillis()).nextInt(200)) + b + 48) % 122);
-      bbs[i] = c;
+    return generateIdentifier(10);
+  }
+
+  public static String generateIdentifier(int length) {
+    final char[] characters = "abcdefghijklmnopqrstuvwxyz0123456789".toCharArray();
+    String id = "";
+    Random m = new SecureRandom(generateStringId().getBytes());
+    for (int i = 0; i < length; i++) {
+      int r = m.nextInt(characters.length);
+      char c = characters[r];
+      if (r % 2 == 0) {
+        c = Character.toUpperCase(c);
+      }
+      id += c;
     }
-    return new String(bbs);
+    return id;
   }
 
   public static Long generateId(Class<?> clazz) {
@@ -182,5 +190,9 @@ public final class IdGenerator {
         }
       }
     }).start();
+  }
+
+  public static void main(String[] args) {
+    System.out.println(System.currentTimeMillis() / 3600000);
   }
 }
