@@ -939,6 +939,10 @@ public final class Utility {
     return CountryCodes.AFRICA_ISO_COUNTRY_CODES.contains(isoCode);
   }
 
+  public static boolean isEuropeanCountry(String isoCode) {
+    return CountryCodes.EUROPEAN_ISO_COUNTRY_CODES.contains(isoCode);
+  }
+
   public static String getCountryCodeFromIp(String ip_address, String license_key) {
     BufferedReader in = null;
     try {

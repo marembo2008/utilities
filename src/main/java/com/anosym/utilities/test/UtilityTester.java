@@ -6,9 +6,9 @@ package com.anosym.utilities.test;
 
 import com.anosym.vjax.v3.VObjectMarshaller;
 import com.anosym.utilities.Application;
-import com.anosym.utilities.Utility;
-import com.anosym.utilities.currency.CurrencyCode;
-import com.anosym.utilities.currency.CurrencyCodes;
+import com.anosym.vjax.util.VConditional;
+import com.anosym.vjax.xml.VDocument;
+import com.anosym.vjax.xml.VElement;
 import java.io.InputStream;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -19,8 +19,6 @@ import java.util.Map;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  *
@@ -54,8 +52,24 @@ public class UtilityTester {
   }
 
   public static void main(String[] args) throws Exception {
-    CurrencyCode cc = Utility.findCurrencyCodeFromCurrencySymbol("USD");
-    System.out.println(cc.getCountryCode() + ": " + cc);
+    VDocument doc = VDocument.parseDocument(System.getProperty("user.home") + "/european-iso-code");
+//    System.out.println(doc.toXmlString());
+    VElement e = doc.getRootElement();
+    e.iterate(new VConditional<VElement>() {
+      public boolean accept(VElement instance) {
+        if (instance.getMarkup().equals("font")) {
+          String isoCode = instance.toContent();
+          if (isoCode != null && isoCode.trim().length() == 2) {
+            System.out.println("\"" + isoCode + "\"");
+          }
+        }
+        return true;
+      }
+
+      public boolean acceptProperty(Object prop) {
+        return true;
+      }
+    });
   }
 
   private static void randomize(List<String> candidates) {
