@@ -28,10 +28,6 @@ public class YellowPagesQueryResults {
     public NoMoreYellowPagesQueryResults(Throwable cause) {
       super(cause);
     }
-
-    public NoMoreYellowPagesQueryResults(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-      super(message, cause, enableSuppression, writableStackTrace);
-    }
   }
   private int totalResults;
   private int numberOfResultsLoaded = 10;
@@ -71,8 +67,8 @@ public class YellowPagesQueryResults {
   }
 
   public boolean hasMoreResult() {
-    System.out.println("Total Results: "+totalResults);
-    System.out.println("CurrentIndex: "+currentIndex);
+    System.out.println("Total Results: " + totalResults);
+    System.out.println("CurrentIndex: " + currentIndex);
     ensureNextIfAlphabetical();
     return (this.numberOfResultsLoaded * ((currentIndex / 10) + 1) < totalResults);
   }

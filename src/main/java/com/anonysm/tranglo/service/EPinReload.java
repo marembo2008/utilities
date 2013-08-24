@@ -36,24 +36,12 @@ public class EPinReload extends Service {
     super(__getWsdlLocation(), EPINRELOAD_QNAME);
   }
 
-  public EPinReload(WebServiceFeature... features) {
-    super(__getWsdlLocation(), EPINRELOAD_QNAME, features);
-  }
-
   public EPinReload(URL wsdlLocation) {
     super(wsdlLocation, EPINRELOAD_QNAME);
   }
 
-  public EPinReload(URL wsdlLocation, WebServiceFeature... features) {
-    super(wsdlLocation, EPINRELOAD_QNAME, features);
-  }
-
   public EPinReload(URL wsdlLocation, QName serviceName) {
     super(wsdlLocation, serviceName);
-  }
-
-  public EPinReload(URL wsdlLocation, QName serviceName, WebServiceFeature... features) {
-    super(wsdlLocation, serviceName, features);
   }
 
   /**

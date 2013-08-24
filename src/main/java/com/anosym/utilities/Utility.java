@@ -36,7 +36,6 @@ import java.math.BigDecimal;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -54,6 +53,7 @@ import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 import javax.imageio.ImageIO;
+import net.sf.jmimemagic.Magic;
 import org.htmlcleaner.CleanerProperties;
 import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.SimpleXmlSerializer;
@@ -784,8 +784,7 @@ public final class Utility {
 
   public static String getMimeType(String fileUrl) {
     try {
-      String type = Files.probeContentType(new File(fileUrl).toPath());
-      return type;
+      return Magic.getMagicMatch(new File(fileUrl), false).getMimeType();
     } catch (Exception ex) {
       Logger.getLogger(Utility.class.getName()).log(Level.SEVERE, null, ex);
     }
