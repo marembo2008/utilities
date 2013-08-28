@@ -53,6 +53,8 @@ public class TwilioSMSSender {
   }
 
   public boolean sendSMS(String number, String msg) {
+    //if the message is more than 160 character, truncate it!!
+    msg = msg.length() > 160 ? msg.substring(0, 160) : msg;
     TwilioRestClient client = new TwilioRestClient(config.getAccountSid(), config.getAuthToken());
     Map<String, String> params = new HashMap<String, String>();
     params.put("Body", msg);
@@ -64,7 +66,7 @@ public class TwilioSMSSender {
       message = messageFactory.create(params);
       Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.INFO, "Sent SMS: {0}", number + ", " + msg + ", " + message);
     } catch (TwilioRestException e) {
-      Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.SEVERE, "Send SMS FAIL: "+number + ", " + msg + ", " + message, e);
+      Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.SEVERE, "Send SMS FAIL: " + number + ", " + msg + ", " + message, e);
       return false;
     }
     return true;
