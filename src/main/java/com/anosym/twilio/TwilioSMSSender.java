@@ -64,7 +64,7 @@ public class TwilioSMSSender {
       message = messageFactory.create(params);
       Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.INFO, "Sent SMS: {0}", number + ", " + msg + ", " + message);
     } catch (TwilioRestException e) {
-      Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.SEVERE, "Send SMS FAIL: {0}", number + ", " + msg + ", " + message);
+      Logger.getLogger(TwilioSMSSender.class.getName()).log(Level.SEVERE, "Send SMS FAIL: "+number + ", " + msg + ", " + message, e);
       return false;
     }
     return true;
