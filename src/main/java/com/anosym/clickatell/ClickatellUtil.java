@@ -29,11 +29,19 @@ import java.util.logging.Logger;
 public class ClickatellUtil {
 
   /**
+   * The default current user accessible home path.
+   */
+  private static final String DEFUALT_CLICKATELL_CONFIG_PATH = "user.home";
+  /**
+   * The file name for the clickatell configuration.
+   */
+  private static final String CLICKATELL_CONFIG_FILE = "clickatell.xml";
+  /**
    * Must be set if different from the default. For manual editing, should be set to path which is
    * easily accessible, and most importantly can be accessed by the current user on which the server
    * is running.
    */
-  public static final String CLICKATELL_PATH_PROPERTY = "clickatell_path_property";
+  public static final String CLICKATELL_CONFIG_PATH = "com.anosym.clickatell.path";
   /**
    * For logging purposes
    */
@@ -44,20 +52,22 @@ public class ClickatellUtil {
   private static ClickatellConfiguration clickatellConfiguration;
 
   static {
-    File file = new File(System.getProperty(CLICKATELL_PATH_PROPERTY, "clikatell.xml"));
-
-    LOGGER.log(Level.INFO, CLICKATELL_PATH_PROPERTY + ": {0}", file.getAbsolutePath());
-
+    File file = getClickatellFile();
     if (!file.exists()) {
       if (file.getParentFile() != null && !file.getParentFile().exists()) {
         file.getParentFile().mkdirs();
       }
-
       clickatellConfiguration = new ClickatellConfiguration();
       update();
     } else {
       reload();
     }
+  }
+
+  private static File getClickatellFile() {
+    File file = new File(System.getProperty(CLICKATELL_CONFIG_PATH, System.getProperty(DEFUALT_CLICKATELL_CONFIG_PATH)), CLICKATELL_CONFIG_FILE);
+    LOGGER.log(Level.INFO, CLICKATELL_CONFIG_PATH + ": {0}", file.getAbsolutePath());
+    return file;
   }
 
   /**
@@ -68,7 +78,9 @@ public class ClickatellUtil {
    */
   public static void updateClickatellConfiguration(
           ClickatellConfiguration clickatellConfiguration) {
-    ClickatellUtil.clickatellConfiguration = clickatellConfiguration;
+    synchronized (ClickatellUtil.class) {
+      ClickatellUtil.clickatellConfiguration = clickatellConfiguration;
+    }
     update();
   }
 
@@ -90,66 +102,59 @@ public class ClickatellUtil {
    * @return
    */
   public static boolean sendSms(List<String> phoneNumbers, String message) {
-
     int successfullySentMsg = 0;
     int failedSentMsg = 0;
-
+    boolean success = false;
     for (int i = 0; i < phoneNumbers.size(); i++) {
-      try {
-        String to = phoneNumbers.get(i);
-        ClickatellSmsData sms = new ClickatellSmsData(clickatellConfiguration.getApiId(),
-                clickatellConfiguration.getUsername(),
-                clickatellConfiguration.getPassword(), to, message,
-                clickatellConfiguration.getFromNumber());
-        ClickatelAPI capi = new ClickatelAPI(sms);
-
-        VElement elem = new VMarshaller<ClickatelAPI>().marshall(capi);
-        String value = elem.toXmlString();
-        String request = "data=" + value;
-
-        LOGGER.log(Level.INFO, request);
-
-        URL url = new URL(clickatellConfiguration.getXmlApiUrl());
-        HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-
-        urlConnection.setDoOutput(true);
-        urlConnection.setUseCaches(false);
-        urlConnection.setRequestMethod("POST");
-
-        OutputStream out = urlConnection.getOutputStream();
-        DataOutputStream dOut = new DataOutputStream(out);
-
-        dOut.writeBytes(request);
-        dOut.flush();
-        dOut.close();
-
-        InputStream inn = urlConnection.getInputStream();
-        final BufferedReader reader = new BufferedReader(new InputStreamReader(inn));
-        String str;
-        String result = "";
-
-        while ((str = reader.readLine()) != null) {
-          result += str;
-        }
-
-        LOGGER.log(Level.INFO, result);
-
-        if (!result.isEmpty()) {
-          if (getResultString(result)) {
-            successfullySentMsg++;
-          } else {
-            failedSentMsg++;
-          }
-        }
-
-        LOGGER.log(Level.INFO, "successfullySentMsg: {0}, failedSentMsg: {1}",
-                new int[]{successfullySentMsg,
-                  failedSentMsg});
-      } catch (Exception ex) {
-        LOGGER.log(Level.SEVERE, null, ex);
+      String to = phoneNumbers.get(i);
+      if (success = sendSms(message, to)) {
+        successfullySentMsg++;
+      } else {
+        failedSentMsg++;
       }
+      LOGGER.log(Level.INFO, "successfullySentMsg: {0}, failedSentMsg: {1}",
+              new int[]{successfullySentMsg,
+        failedSentMsg});
     }
+    return success;
+  }
 
+  public synchronized static boolean sendSms(String message, String phoneNumber) {
+    try {
+      ClickatellSmsData sms = new ClickatellSmsData(clickatellConfiguration.getApiId(),
+              clickatellConfiguration.getUsername(),
+              clickatellConfiguration.getPassword(), phoneNumber, message,
+              clickatellConfiguration.getFromNumber());
+      ClickatelAPI capi = new ClickatelAPI(sms);
+
+      VElement elem = new VMarshaller<ClickatelAPI>().marshall(capi);
+      String value = elem.toXmlString();
+      String request = "data=" + value;
+      LOGGER.log(Level.INFO, request);
+      URL url = new URL(clickatellConfiguration.getXmlApiUrl());
+      HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+      urlConnection.setDoOutput(true);
+      urlConnection.setUseCaches(false);
+      urlConnection.setRequestMethod("POST");
+      OutputStream out = urlConnection.getOutputStream();
+      DataOutputStream dOut = new DataOutputStream(out);
+      dOut.writeBytes(request);
+      dOut.flush();
+      dOut.close();
+      InputStream inn = urlConnection.getInputStream();
+      final BufferedReader reader = new BufferedReader(new InputStreamReader(inn));
+      String str;
+      String result = "";
+      while ((str = reader.readLine()) != null) {
+        result += str;
+      }
+      LOGGER.log(Level.INFO, result);
+      if (!result.isEmpty()) {
+        return getResultString(result);
+      }
+    } catch (Exception ex) {
+      LOGGER.log(Level.SEVERE, null, ex);
+    }
     return false;
   }
 
@@ -165,21 +170,16 @@ public class ClickatellUtil {
     VDocument doc = VDocument.parseDocumentFromString(info);
     VElement root = doc.getRootElement();
     VElement sendMsgResp = root.findChild("sendMsgResp");
-
     if (sendMsgResp != null) {
       VElement fault = sendMsgResp.findChild("fault");
-
       if (fault != null) {
         return false;
       }
-
       VElement apiMsgId = sendMsgResp.findChild("apiMsgId");
-
       if (apiMsgId != null) {
         return true;
       }
     }
-
     return false;
   }
 
@@ -189,13 +189,13 @@ public class ClickatellUtil {
    */
   private static void reload() {
     try {
-      File file =
-              new File(System.getProperty(CLICKATELL_PATH_PROPERTY, "clikatell.xml"));
+      File file = getClickatellFile();
       VDocument doc = new VDocument(file);
       VMarshaller<ClickatellConfiguration> m = new VMarshaller<ClickatellConfiguration>();
-
       doc.parse();
-      clickatellConfiguration = m.unmarshall(doc);
+      synchronized (ClickatellUtil.class) {
+        clickatellConfiguration = m.unmarshall(doc);
+      }
       LOGGER.log(Level.INFO, doc.toXmlString());
     } catch (VXMLBindingException ex) {
       Logger.getLogger(ClickatellUtil.class.getName()).log(Level.SEVERE, null, ex);
@@ -208,12 +208,12 @@ public class ClickatellUtil {
    */
   private static void update() {
     try {
-      File file =
-              new File(System.getProperty(CLICKATELL_PATH_PROPERTY, "clikatell.xml"));
+      File file = getClickatellFile();
       VMarshaller<ClickatellConfiguration> m = new VMarshaller<ClickatellConfiguration>();
       VDocument doc = new VDocument(file);
-
-      doc.setRootElement(m.marshall(clickatellConfiguration));
+      synchronized (ClickatellUtil.class) {
+        doc.setRootElement(m.marshall(clickatellConfiguration));
+      }
       doc.writeDocument();
       LOGGER.log(Level.INFO, doc.toXmlString());
     } catch (VXMLBindingException ex) {
@@ -221,6 +221,3 @@ public class ClickatellUtil {
     }
   }
 }
-
-
-//~ Formatted by Jindent --- http://www.jindent.com
