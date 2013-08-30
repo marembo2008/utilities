@@ -9,6 +9,7 @@ import java.security.SecureRandom;
 import java.util.Calendar;
 import java.util.Random;
 import java.util.Set;
+import org.apache.axis2.saaj.util.IDGenerator;
 
 /**
  *
@@ -193,6 +194,26 @@ public final class IdGenerator {
   }
 
   public static void main(String[] args) {
-    System.out.println(System.currentTimeMillis() / 3600000);
+    for (int i = 0; i < 1000; i++) {
+      System.out.println(generateUniqueId());
+    }
+  }
+
+  public static String generateUniqueId() {
+    String id = IDGenerator.generateID();
+    byte[] bbs = id.getBytes();
+    //we know all l this is just integers.
+    //add at leas
+    Random r = new Random(System.currentTimeMillis());
+    for (int i = 0; i < bbs.length; i++) {
+      byte b = bbs[i];
+      int n = r.nextInt(26);
+      if (n > 0) {
+        int k = (57 - b) + 8 + n;
+        b += k;
+        bbs[i] = b;
+      }
+    }
+    return new String(bbs);
   }
 }
