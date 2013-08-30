@@ -196,7 +196,6 @@ public class ClickatellUtil {
       synchronized (ClickatellUtil.class) {
         clickatellConfiguration = m.unmarshall(doc);
       }
-      LOGGER.log(Level.INFO, doc.toXmlString());
     } catch (VXMLBindingException ex) {
       Logger.getLogger(ClickatellUtil.class.getName()).log(Level.SEVERE, null, ex);
     }
