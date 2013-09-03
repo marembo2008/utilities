@@ -4,6 +4,7 @@
  */
 package com.anosym.test.twilio;
 
+import com.anosym.twilio.TwilioSMSSender;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -38,14 +39,8 @@ public class TwilioSMSSenderTest {
 
   @Test
   public void testSend() {
-
-//        String twilioConfig = "/home/kenn";
-//    System.setProperty("twilio.config", twilioConfig);
-//    System.setProperty(TwilioSMSSender.TWILIO_CONFIG_PROPERTY, twilioConfig);
 //    TwilioSMSSender sender = TwilioSMSSender.getInstance();
-//boolean result = sender.sendSMS("+254725214698", "Hello this is a twilio sms test");
-
-    boolean result = true;
-    assertTrue(result);
+//    boolean result = sender.sendSMS("+254721905360", "Hello this is a twilio sms test");
+//    assertTrue(result);
   }
 }

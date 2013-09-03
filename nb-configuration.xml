@@ -14,5 +14,6 @@ That way multiple projects can share the same settings (useful for formatting ru
 Any value defined here will override the pom.xml file value but is only applicable to the current project.
 -->
         <netbeans.hint.jdkPlatform>JDK_1.6</netbeans.hint.jdkPlatform>
+        <org-netbeans-modules-maven-jaxws._5f_C_5f_EPin_5f_Reload>http://175.139.151.69:8099/IAT/EPin_Reload.asmx</org-netbeans-modules-maven-jaxws._5f_C_5f_EPin_5f_Reload>
     </properties>
 </project-shared-configuration>

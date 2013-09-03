@@ -9,7 +9,6 @@ import java.security.SecureRandom;
 import java.util.Calendar;
 import java.util.Random;
 import java.util.Set;
-import org.apache.axis2.saaj.util.IDGenerator;
 
 /**
  *
@@ -200,7 +199,7 @@ public final class IdGenerator {
   }
 
   public static String generateUniqueId() {
-    String id = IDGenerator.generateID();
+    String id = IdGenerator.generateStringId();
     byte[] bbs = id.getBytes();
     //we know all l this is just integers.
     //add at leas
