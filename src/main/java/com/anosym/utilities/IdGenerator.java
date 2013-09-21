@@ -16,32 +16,15 @@ import java.util.Set;
  */
 public final class IdGenerator {
 
-  public static final String ID_GENERATOR_EPOCH = "id.generator.epoch.iso";
+  public static final String ID_GENERATOR_EPOCH = "com.anosym.idgenerator.epoch";
   private static final int LONG_STR_LEN = (Long.MAX_VALUE + "").length();
 
   public static Long generateId() {
-    Long id = null;
-    String epoch = System.getProperty(ID_GENERATOR_EPOCH);
-    if (epoch != null && !epoch.isEmpty()) {
-      Calendar c = FormattedCalendar.parseISODate(epoch);
-      if (c != null) {
-        id = System.nanoTime() - c.getTimeInMillis();
-      }
-    } else {
-      id = System.nanoTime();
-    }
-    id = Math.abs(id);
-    String idStr = id.toString();
-    int maxAdd = (LONG_STR_LEN - idStr.length() - 1);
-    Random r = new Random(id);
-    int index = r.nextInt(idStr.length());
-    if (index > -1 && maxAdd > 0) {
-      int maxValue = (int) Math.pow(10, maxAdd);
-      int value = Math.abs(r.nextInt(maxValue));
-      String p1 = idStr.substring(0, index);
-      String p2 = idStr.substring(index);
-      idStr = p1 + value + p2;
-      return Long.parseLong(idStr);
+    Long id = System.currentTimeMillis();
+    String epochStr = System.getProperty(ID_GENERATOR_EPOCH, "2000-01-01 00:00:00");
+    if (epochStr != null) {
+      Calendar epoch = FormattedCalendar.createInstance(epochStr);
+      id = id - epoch.getTimeInMillis();
     }
     return id;
   }

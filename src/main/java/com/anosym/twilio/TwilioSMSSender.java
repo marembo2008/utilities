@@ -53,6 +53,12 @@ public class TwilioSMSSender {
   }
 
   public boolean sendSMS(String number, String msg) {
+    /**
+     * The number must start with +
+     */
+    if (!number.startsWith("+")) {
+      number += "+";
+    }
     //if the message is more than 160 character, truncate it!!
     msg = msg.length() > 160 ? msg.substring(0, 160) : msg;
     TwilioRestClient client = new TwilioRestClient(config.getAccountSid(), config.getAuthToken());
