@@ -23,8 +23,8 @@ public final class IdGenerator {
     Long id = System.currentTimeMillis();
     String epochStr = System.getProperty(ID_GENERATOR_EPOCH, "2000-01-01 00:00:00");
     if (epochStr != null) {
-      Calendar epoch = FormattedCalendar.createInstance(epochStr);
-      id = id - epoch.getTimeInMillis();
+      Calendar epoch = FormattedCalendar.parseISODate(epochStr);
+      id -= epoch.getTimeInMillis();
     }
     return id;
   }
@@ -177,7 +177,7 @@ public final class IdGenerator {
 
   public static void main(String[] args) {
     for (int i = 0; i < 1000; i++) {
-      System.out.println(generateUniqueId());
+      System.out.println(generateId());
     }
   }
 

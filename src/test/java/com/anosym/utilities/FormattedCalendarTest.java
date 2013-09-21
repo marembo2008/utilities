@@ -71,4 +71,14 @@ public class FormattedCalendarTest {
     System.out.println(FormattedCalendar.toISOString(expected));
     assertEquals(expected, actual);
   }
+
+  @Test
+  public void testGetInstanceIso(){
+    Calendar expected = Calendar.getInstance();
+    expected.setTimeInMillis(0);
+    expected.set(2000, 0, 01, 00, 00, 00);
+    String clStr = "2000-01-01 00:00:00";
+    Calendar actual = FormattedCalendar.parseISODate(clStr);
+    assertEquals(expected, actual);
+  }
 }
