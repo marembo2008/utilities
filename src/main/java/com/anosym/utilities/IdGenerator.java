@@ -7,6 +7,7 @@ package com.anosym.utilities;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.Calendar;
+import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
@@ -20,11 +21,11 @@ public final class IdGenerator {
   private static final int LONG_STR_LEN = (Long.MAX_VALUE + "").length();
 
   public static Long generateId() {
-    Long id = System.currentTimeMillis();
+    Long id = System.nanoTime();
     String epochStr = System.getProperty(ID_GENERATOR_EPOCH, "2000-01-01 00:00:00");
     if (epochStr != null) {
       Calendar epoch = FormattedCalendar.parseISODate(epochStr);
-      id -= epoch.getTimeInMillis();
+      id -= epoch.getTimeInMillis() + new Random(1000).nextInt(1000);
     }
     return id;
   }
@@ -176,9 +177,15 @@ public final class IdGenerator {
   }
 
   public static void main(String[] args) {
-    for (int i = 0; i < 1000; i++) {
-      System.out.println(generateId());
+    Set<Long> s = new HashSet<Long>();
+    for (int i = 0; i < 100000; i++) {
+      Long id = generateId();
+      s.add(generateId());
+      s.add(generateId());
+      s.add(generateId());
+      s.add(id);
     }
+    System.out.println(s.size());
   }
 
   public static String generateUniqueId() {
