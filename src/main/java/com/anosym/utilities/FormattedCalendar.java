@@ -56,6 +56,12 @@ public class FormattedCalendar extends GregorianCalendar implements Serializable
     return getInstance().get(Calendar.MONTH) == ((transactionDate != null) ? transactionDate.get(Calendar.MONTH) : 0);
   }
 
+  public static boolean dateEquals(Calendar d0, Calendar d1) {
+    return d0 == null ? d1 == null : (d1 == null) ? false : (d0.get(Calendar.YEAR) == d1.get(Calendar.YEAR)
+            && d0.get(Calendar.MONTH) == d1.get(Calendar.MONTH)
+            && d0.get(Calendar.DATE) == d1.get(Calendar.DATE));
+  }
+
   public FormattedCalendar(int year, int month, int dayOfMonth, int hourOfDay, int minute, int second) {
     super(year, month, dayOfMonth, hourOfDay, minute, second);
   }
