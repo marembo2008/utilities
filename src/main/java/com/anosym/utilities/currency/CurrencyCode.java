@@ -103,4 +103,8 @@ public class CurrencyCode implements Serializable {
   public String toFullString() {
     return "CurrencyCode{" + "countryCode=" + countryCode + ", currencyName=" + currencyName + ", currencySymbol=" + currencySymbol + ", currencyIsoCode=" + currencyIsoCode + '}';
   }
+
+  public String getDescription() {
+    return currencySymbol + "(" + countryCode.getName() + ")";
+  }
 }

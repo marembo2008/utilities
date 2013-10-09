@@ -6,6 +6,8 @@ package com.anosym.utilities.test;
 
 import com.anosym.vjax.v3.VObjectMarshaller;
 import com.anosym.utilities.Application;
+import com.anosym.utilities.Utility;
+import com.anosym.utilities.geocode.CountryCode;
 import com.anosym.vjax.util.VConditional;
 import com.anosym.vjax.xml.VDocument;
 import com.anosym.vjax.xml.VElement;
@@ -52,24 +54,8 @@ public class UtilityTester {
   }
 
   public static void main(String[] args) throws Exception {
-    VDocument doc = VDocument.parseDocument(System.getProperty("user.home") + "/european-iso-code");
-//    System.out.println(doc.toXmlString());
-    VElement e = doc.getRootElement();
-    e.iterate(new VConditional<VElement>() {
-      public boolean accept(VElement instance) {
-        if (instance.getMarkup().equals("font")) {
-          String isoCode = instance.toContent();
-          if (isoCode != null && isoCode.trim().length() == 2) {
-            System.out.println("\"" + isoCode + "\"");
-          }
-        }
-        return true;
-      }
-
-      public boolean acceptProperty(Object prop) {
-        return true;
-      }
-    });
+    CountryCode cc = Utility.findCountryCodeFromCountryIsoCode("AO");
+    System.out.println(cc);
   }
 
   private static void randomize(List<String> candidates) {
