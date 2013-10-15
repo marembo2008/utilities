@@ -22,6 +22,13 @@ public class CountryCode implements Serializable, Comparable<CountryCode> {
   public CountryCode() {
   }
 
+  public CountryCode(String name, String isoCode, String isoCode2, String internationalDialingCode) {
+    this.name = name;
+    this.isoCode = isoCode;
+    this.isoCode2 = isoCode2;
+    this.internationalDialingCode = internationalDialingCode;
+  }
+
   public CountryCode(String name, String isoCode, String internationalDialingCode) {
     this.name = name;
     this.isoCode = isoCode;
