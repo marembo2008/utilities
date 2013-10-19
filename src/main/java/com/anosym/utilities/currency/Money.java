@@ -16,6 +16,7 @@ import java.math.RoundingMode;
  */
 public class Money implements Serializable, Comparable<Money> {
 
+  private static final long serialVersionUID = -2033981845422181833L;
   public static final Money ZERO = new Money();
   public static final Money ONE = new Money(1);
   public static final Money TW0 = new Money(2);
