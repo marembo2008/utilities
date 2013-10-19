@@ -4,6 +4,7 @@
  */
 package com.anosym.utilities.currency;
 
+import com.anosym.utilities.IdGenerator;
 import com.anosym.utilities.Utility;
 import com.anosym.utilities.formatter.CurrencyFormatter;
 import java.io.Serializable;
@@ -16,6 +17,7 @@ import java.math.RoundingMode;
  */
 public class Money implements Serializable, Comparable<Money> {
 
+  private static final long serialVersionUID = IdGenerator.serialVersionUID(Money.class);
   public static final Money ZERO = new Money();
   public static final Money ONE = new Money(1);
   public static final Money TW0 = new Money(2);
