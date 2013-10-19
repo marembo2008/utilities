@@ -556,6 +556,12 @@ public final class Utility {
    * @return
    */
   public static <T, V> T find(List<T> list, VComparator<T, V> comp, V value) {
+//    for (T t : list) {
+//      if (comp.compare(t, value) == 0) {
+//        return t;
+//      }
+//    }
+//    return null;
     return find(list, comp, value, 0, list.size());
   }
 
