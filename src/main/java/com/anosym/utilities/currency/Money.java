@@ -41,11 +41,6 @@ public class Money implements Serializable, Comparable<Money> {
     this.currency = currency;
   }
 
-  public Money(CurrencyCode currency, BigDecimal value) {
-    this.value = value.setScale(2, RoundingMode.UP);
-    this.currency = currency;
-  }
-
   public BigDecimal getValue() {
     return value;
   }
