@@ -7,8 +7,6 @@ package com.anosym.utilities;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.Calendar;
-import java.util.HashSet;
-import java.util.Locale;
 import java.util.Random;
 import java.util.Set;
 
@@ -128,11 +126,14 @@ public final class IdGenerator {
    * @return
    */
   public static String generateTimeBasedId(int length) {
-    Calendar now = Calendar.getInstance();
-    String year = now.getDisplayName(Calendar.YEAR, Calendar.SHORT, Locale.getDefault());
-    String month = now.getDisplayName(Calendar.MONTH, Calendar.SHORT, Locale.getDefault());
-    String date = now.getDisplayName(Calendar.DATE, Calendar.SHORT, Locale.getDefault());
-    String hour = now.getDisplayName(Calendar.HOUR_OF_DAY, Calendar.SHORT, Locale.getDefault());
+    return generateTimeBasedId(Calendar.getInstance(), length);
+  }
+
+  static String generateTimeBasedId(Calendar now, int length) {
+    String year = now.get(Calendar.YEAR) + "";
+    String month = now.get(Calendar.MONTH) + "";
+    String date = now.get(Calendar.DATE) + "";
+    String hour = now.get(Calendar.HOUR_OF_DAY) + "";
     String id = generateLongId(length) + "";
     return year + month + date + hour + id;
   }
