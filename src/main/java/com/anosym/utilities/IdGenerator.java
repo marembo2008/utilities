@@ -8,6 +8,7 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.Calendar;
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Random;
 import java.util.Set;
 
@@ -119,6 +120,27 @@ public final class IdGenerator {
     return prefix + generateLongId(length);
   }
 
+  /**
+   * The minimum length of the generated id is 5+length and the maximum length of the generated id
+   * is 8+length
+   *
+   * @param length
+   * @return
+   */
+  public static String generateTimeBasedId(int length) {
+    Calendar now = Calendar.getInstance();
+    String year = now.getDisplayName(Calendar.YEAR, Calendar.SHORT, Locale.getDefault());
+    String month = now.getDisplayName(Calendar.MONTH, Calendar.SHORT, Locale.getDefault());
+    String date = now.getDisplayName(Calendar.DATE, Calendar.SHORT, Locale.getDefault());
+    String hour = now.getDisplayName(Calendar.HOUR_OF_DAY, Calendar.SHORT, Locale.getDefault());
+    String id = generateLongId(length) + "";
+    return year + month + date + hour + id;
+  }
+
+  public static String generateTimeBasedId(int length, String prefix) {
+    return prefix + generateTimeBasedId(length);
+  }
+
   public static Long generateLongId(Class<?> clazz, int length) {
     String fullName = clazz.getCanonicalName();
     byte[] bytes = fullName.getBytes();
@@ -174,18 +196,6 @@ public final class IdGenerator {
         }
       }
     }).start();
-  }
-
-  public static void main(String[] args) {
-    Set<Long> s = new HashSet<Long>();
-    for (int i = 0; i < 100000; i++) {
-      Long id = generateId();
-      s.add(generateId());
-      s.add(generateId());
-      s.add(generateId());
-      s.add(id);
-    }
-    System.out.println(s.size());
   }
 
   public static String generateUniqueId() {

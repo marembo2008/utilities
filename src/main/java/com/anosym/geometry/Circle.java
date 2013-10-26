@@ -4,6 +4,7 @@
  */
 package com.anosym.geometry;
 
+import com.anosym.utilities.IdGenerator;
 import java.io.Serializable;
 
 /**
@@ -12,50 +13,67 @@ import java.io.Serializable;
  */
 public class Circle implements Geometry, Serializable {
 
-    private Coordinate centre;
-    private double radius;
+  private static final long serialVersionUID = IdGenerator.serialVersionUID(Circle.class);
+  private Coordinate centre;
+  private double radius;
 
-    public Circle() {
-    }
+  public Circle() {
+  }
 
-    public Circle(Coordinate centre, double radius) {
-        this.centre = centre;
-        this.radius = radius;
-    }
+  public Circle(Coordinate centre, double radius) {
+    this.centre = centre;
+    this.radius = radius;
+  }
 
-    public double geometryLength() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+  public void setRadius(double radius) {
+    this.radius = radius;
+  }
 
-    public GeometryType getType() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+  public double getRadius() {
+    return radius;
+  }
 
-    public Geometry nextPoint() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+  public void setCentre(Coordinate centre) {
+    this.centre = centre;
+  }
 
-    public Geometry geometricCentre() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+  public Coordinate getCentre() {
+    return centre;
+  }
 
-    public boolean isWithin(Geometry geometry) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+  public double geometryLength() {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
 
-    public boolean isIntersecting(Geometry... geometries) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+  public GeometryType getType() {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
 
-    public double radialDistance(Geometry geometry) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+  public Geometry nextPoint() {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
 
-    public double metricDistance(Geometry geometry) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+  public Geometry geometricCentre() {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
 
-    public double radialDirection(Geometry geometry) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+  public boolean isWithin(Geometry geometry) {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
+
+  public boolean isIntersecting(Geometry... geometries) {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
+
+  public double radialDistance(Geometry geometry) {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
+
+  public double metricDistance(Geometry geometry) {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
+
+  public double radialDirection(Geometry geometry) {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
 }

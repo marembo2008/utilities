@@ -4,6 +4,7 @@
  */
 package com.anosym.utilities.metric;
 
+import com.anosym.utilities.IdGenerator;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.MathContext;
@@ -14,6 +15,7 @@ import java.math.MathContext;
  */
 public class MetricUnit implements Serializable {
 
+  private static final long serialVersionUID = IdGenerator.serialVersionUID(MetricUnit.class);
   /**
    * The SI unit for this unit. If this is itself an SI unit, then it will point to itself or it
    * will be null.
@@ -107,7 +109,7 @@ public class MetricUnit implements Serializable {
   }
 
   public boolean isSIUnit() {
-    return this.siUnit == null || (this.siUnit == this && this.conversionFactor.equals(BigDecimal.ONE));
+    return (this.siUnit == null || this.siUnit == this) && this.conversionFactor.equals(BigDecimal.ONE);
   }
 
   @Override

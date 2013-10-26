@@ -4,6 +4,7 @@
  */
 package com.anosym.geometry;
 
+import com.anosym.utilities.IdGenerator;
 import com.anosym.utilities.Utility;
 import java.awt.Point;
 import java.awt.geom.Point2D;
@@ -15,7 +16,11 @@ import java.io.Serializable;
  */
 public class Coordinate extends Point2D.Double implements Geometry, Serializable {
 
-  private double altitude;
+  private static final long serialVersionUID = IdGenerator.serialVersionUID(Coordinate.class);
+  /**
+   * By default we assume sea level.
+   */
+  private double altitude = 0.0;
 
   public Coordinate(double x, double y) {
     setLocation(x, y);
@@ -89,22 +94,27 @@ public class Coordinate extends Point2D.Double implements Geometry, Serializable
     this.setLocation(longitude, getX());
   }
 
+  @Override
   public double geometryLength() {
     throw new UnsupportedOperationException("Not supported yet.");
   }
 
+  @Override
   public GeometryType getType() {
     return GeometryType.POINT;
   }
 
+  @Override
   public Geometry nextPoint() {
     throw new NoMorePointsException("No next elements in coordinates");
   }
 
+  @Override
   public Geometry geometricCentre() {
     return this;
   }
 
+  @Override
   public boolean isWithin(Geometry geometry) {
     if (geometry.getType() == GeometryType.POINT) {
       return this.equals(geometry);
@@ -112,18 +122,22 @@ public class Coordinate extends Point2D.Double implements Geometry, Serializable
     return false;
   }
 
+  @Override
   public boolean isIntersecting(Geometry... geometries) {
     throw new UnsupportedOperationException("Not supported yet.");
   }
 
+  @Override
   public double radialDistance(Geometry geometry) {
     throw new UnsupportedOperationException("Not supported yet.");
   }
 
+  @Override
   public double metricDistance(Geometry geometry) {
     throw new UnsupportedOperationException("Not supported yet.");
   }
 
+  @Override
   public double radialDirection(Geometry geometry) {
     throw new UnsupportedOperationException("Not supported yet.");
   }

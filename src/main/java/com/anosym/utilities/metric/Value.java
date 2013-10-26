@@ -4,6 +4,7 @@
  */
 package com.anosym.utilities.metric;
 
+import com.anosym.utilities.IdGenerator;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.MathContext;
@@ -14,6 +15,7 @@ import java.math.MathContext;
  */
 public class Value implements Serializable {
 
+  private static final long serialVersionUID = IdGenerator.serialVersionUID(Value.class);
   private BigDecimal value;
   private MetricUnit unit;
 
