@@ -147,10 +147,7 @@ public class Money implements Serializable, Comparable<Money> {
     if (this.value != other.value && (this.value == null || !this.value.equals(other.value))) {
       return false;
     }
-    if (this.currency != other.currency && (this.currency == null || !this.currency.equals(other.currency))) {
-      return false;
-    }
-    return true;
+    return this.currency == other.currency || (this.currency != null && this.currency.equals(other.currency));
   }
 
   @Override
@@ -158,8 +155,9 @@ public class Money implements Serializable, Comparable<Money> {
     return currency.getCurrencySymbol() + new CurrencyFormatter().format(getValue());
   }
 
+  @Override
   public int compareTo(Money o) {
-    if (this.getCurrency().equals(o.getCurrency())) {
+    if (!this.getCurrency().equals(o.getCurrency())) {
       throw new MoneyException("Cannot compare monies with different currencies.");
     }
     return value.compareTo(o.value);

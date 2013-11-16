@@ -4,8 +4,13 @@
  */
 package com.anosym.utilities.cl;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
@@ -28,30 +33,42 @@ public final class CommandLineArgument {
     if (args == null) {
       return;
     }
+    List<String> argList = new ArrayList<String>(Arrays.asList(args));
     clArguments = new HashMap<String, String>();
-    Pattern equalId = Pattern.compile("^(\\-{1}\\w+\\=?\\w*)");
-    Pattern valueId = Pattern.compile("\\-{2}");
-    boolean previousValueId = false;
-    String valueIdParam = null;
-    for (String id : args) {
-      //check equal id
-      if (equalId.matcher(id).find()) {
-        if (id.contains("=")) {
-          String[] idvalues = id.split("=");
-          clArguments.put(idvalues[0], idvalues[1]);
-        } else {
-          clArguments.put(id, id);
+    Pattern idRegex = Pattern.compile("\\-{1}\\w+\\={1}");
+    Pattern valueRegex = Pattern.compile("={1}.+");
+    Iterator<String> argIter = argList.iterator();
+    for (; argIter.hasNext();) {
+      String arg = argIter.next().trim();
+      Matcher idm = idRegex.matcher(arg);
+      Matcher valuem = valueRegex.matcher(arg);
+      if (idm.find()) {
+        String id = arg.substring(idm.start() + 1, idm.end() - 1);
+        if (valuem.find()) {
+          String value = arg.substring(valuem.start() + 1);
+          clArguments.put(id, value);
         }
-      } else if (valueId.matcher(id).find()) {
-        valueIdParam = id;
-        previousValueId = true;
-        continue;
-      } else if (previousValueId) {
-        clArguments.put(valueIdParam, id);
-      } else {
-        clArguments.put(generateKey(), id);
+        //regardless we remove it
+        argIter.remove();
       }
-      previousValueId = false;
+    }
+    //then we have --key value option
+    argIter = argList.iterator();
+    idRegex = Pattern.compile("\\-{2}\\w+");
+    valueRegex = Pattern.compile("[\\w*\\d*]+");
+    String id = null;
+    for (; argIter.hasNext();) {
+      String param = argIter.next().trim();
+      Matcher idm = idRegex.matcher(param);
+      Matcher valuem = valueRegex.matcher(param);
+      if (idm.find()) {
+        id = param.substring(idm.start() + 2);
+      } else if (valuem.find() && id != null) {
+        clArguments.put(id, param);
+        id = null;
+      } else {
+        id = null;
+      }
     }
   }
 

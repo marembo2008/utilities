@@ -175,4 +175,27 @@ public class Ipv4 implements Comparable<Ipv4> {
   public int compareTo(Ipv4 origin) {
     return Long.valueOf(toLong()).compareTo(origin.toLong());
   }
+
+  public void next() {
+    if (fourthOctet == 255) {
+      fourthOctet = 0;
+      if (thirdOctet == 255) {
+        thirdOctet = 0;
+        if (secondOctet == 255) {
+          secondOctet = 0;
+          if (firstOctet == 255) {
+            firstOctet = 1;
+          } else {
+            firstOctet++;
+          }
+        } else {
+          secondOctet++;
+        }
+      } else {
+        thirdOctet++;
+      }
+    } else {
+      fourthOctet++;
+    }
+  }
 }

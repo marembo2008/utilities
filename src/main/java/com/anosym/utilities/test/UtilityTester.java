@@ -54,8 +54,12 @@ public class UtilityTester {
   }
 
   public static void main(String[] args) throws Exception {
-    CountryCode cc = Utility.findCountryCodeFromCountryIsoCode("AO");
-    System.out.println(cc);
+    int i = 78;
+    int j = 7;
+    char c = (char) i;
+    char d = (char) j;
+    System.out.println(c);
+    System.out.println(d);
   }
 
   private static void randomize(List<String> candidates) {

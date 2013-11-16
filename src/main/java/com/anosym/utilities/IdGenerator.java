@@ -17,14 +17,13 @@ import java.util.Set;
 public final class IdGenerator {
 
   public static final String ID_GENERATOR_EPOCH = "com.anosym.idgenerator.epoch";
-  private static final int LONG_STR_LEN = (Long.MAX_VALUE + "").length();
 
   public static Long generateId() {
     Long id = System.nanoTime();
     String epochStr = System.getProperty(ID_GENERATOR_EPOCH, "2000-01-01 00:00:00");
-    if (epochStr != null) {
+    if (!Utility.isNullOrEmpty(epochStr)) {
       Calendar epoch = FormattedCalendar.parseISODate(epochStr);
-      id -= epoch.getTimeInMillis() + new Random(1000).nextInt(1000);
+      id -= epoch.getTimeInMillis() + new Random(System.currentTimeMillis()).nextInt(1000);
     }
     return id;
   }
