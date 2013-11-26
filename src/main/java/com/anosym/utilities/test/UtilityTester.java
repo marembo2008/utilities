@@ -21,6 +21,8 @@ import java.util.Map;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -54,12 +56,11 @@ public class UtilityTester {
   }
 
   public static void main(String[] args) throws Exception {
-    int i = 78;
-    int j = 7;
-    char c = (char) i;
-    char d = (char) j;
-    System.out.println(c);
-    System.out.println(d);
+    String uah = "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko".toLowerCase();
+    String regex = "windows\\s+[^\\d*\\w*]\\s+\\d+\\.*\\d*";
+    Pattern p = Pattern.compile(regex);
+    Matcher m = p.matcher(uah);
+    System.out.println(m.find());
   }
 
   private static void randomize(List<String> candidates) {
