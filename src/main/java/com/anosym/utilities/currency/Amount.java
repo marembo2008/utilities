@@ -6,6 +6,7 @@ package com.anosym.utilities.currency;
 
 import com.anosym.utilities.formatter.CurrencyFormatter;
 import com.anosym.utilities.IdGenerator;
+import com.anosym.utilities.jaxb.CurrencyJAXBAdapter;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -13,6 +14,7 @@ import java.util.Currency;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  *
@@ -31,6 +33,7 @@ public class Amount implements Serializable, Comparable<Amount> {
    * member instances
    */
   private BigDecimal value;
+  @XmlJavaTypeAdapter(CurrencyJAXBAdapter.class)
   private Currency currency;
 
   public Amount() {
@@ -180,10 +183,7 @@ public class Amount implements Serializable, Comparable<Amount> {
     if (this.value != other.value && (this.value == null || !this.value.equals(other.value))) {
       return false;
     }
-    if (this.currency != other.currency && (this.currency == null || !this.currency.equals(other.currency))) {
-      return false;
-    }
-    return true;
+    return this.currency == other.currency || (this.currency != null && this.currency.equals(other.currency));
   }
 
   @Override
