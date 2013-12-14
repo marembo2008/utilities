@@ -16,6 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
@@ -23,6 +24,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * @author marembo
  */
 @XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name = "Amount")
 public class Amount implements Serializable, Comparable<Amount> {
 
   public static final String DEFAULT_ENVIRONMENT_COUNTRY = "default.environment.country";
@@ -98,7 +100,6 @@ public class Amount implements Serializable, Comparable<Amount> {
     this.value = value;
   }
 
-  @XmlJavaTypeAdapter(CurrencyJAXBAdapter.class)
   public Currency getCurrency() {
     return currency;
   }
