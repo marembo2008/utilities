@@ -95,6 +95,7 @@ public class Amount implements Serializable, Comparable<Amount> {
     this.value = value;
   }
 
+  @XmlJavaTypeAdapter(CurrencyJAXBAdapter.class)
   public Currency getCurrency() {
     return currency;
   }
