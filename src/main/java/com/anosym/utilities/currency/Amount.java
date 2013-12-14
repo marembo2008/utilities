@@ -14,12 +14,15 @@ import java.util.Currency;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  *
  * @author marembo
  */
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Amount implements Serializable, Comparable<Amount> {
 
   public static final String DEFAULT_ENVIRONMENT_COUNTRY = "default.environment.country";
