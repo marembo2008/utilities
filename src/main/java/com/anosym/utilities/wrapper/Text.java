@@ -21,6 +21,7 @@ public class Text implements Serializable, Comparable<Text>, CharSequence {
   private String text;
 
   public Text() {
+    text="";
   }
 
   public Text(String text) {
