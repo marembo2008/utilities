@@ -633,6 +633,26 @@ public final class Utility {
   }
 
   /**
+   * Returns a list of filtered element based on the selector and the list values.
+   *
+   * @param <T>
+   * @param <R>
+   * @param lists
+   * @param selector
+   * @return
+   */
+  public static <T, R> List<R> filter(List<T> lists, SelectionFilter<T, R> selector) {
+    List<R> filters = new ArrayList<R>();
+    for (ListIterator<T> it = lists.listIterator(); it.hasNext();) {
+      R value = selector.filter(it.next());
+      if (value != null) {
+        filters.add(value);
+      }
+    }
+    return filters;
+  }
+
+  /**
    * Returns the first element in the list that meets the selector constraint.
    *
    * @param <T>
