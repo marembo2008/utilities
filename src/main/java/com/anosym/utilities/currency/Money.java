@@ -5,10 +5,12 @@
 package com.anosym.utilities.currency;
 
 import com.anosym.utilities.Utility;
+import com.anosym.utilities.currency.jaxb.CurrencyCodeJaxbAdapter;
 import com.anosym.utilities.formatter.CurrencyFormatter;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  *
@@ -23,6 +25,7 @@ public class Money implements Serializable, Comparable<Money> {
   public static final Money FIVE = new Money(5);
   public static final Money TEN = new Money(10);
   private BigDecimal value;
+  @XmlJavaTypeAdapter(CurrencyCodeJaxbAdapter.class)
   private CurrencyCode currency;
 
   public Money() {
