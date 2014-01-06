@@ -7,12 +7,15 @@ package com.anosym.utilities.currency;
 import com.anosym.utilities.geocode.CountryCode;
 import com.anosym.utilities.geocode.jaxb.CountryCodeJaxbAdapter;
 import java.io.Serializable;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  *
  * @author marembo
  */
+@XmlAccessorType(XmlAccessType.FIELD)
 public class CurrencyCode implements Serializable {
 
   private static final long serialVersionUID = 128282922920L;

@@ -10,12 +10,15 @@ import com.anosym.utilities.formatter.CurrencyFormatter;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  *
  * @author marembo
  */
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Money implements Serializable, Comparable<Money> {
 
   private static final long serialVersionUID = -2033981845422181833L;
