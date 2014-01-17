@@ -6,11 +6,6 @@ package com.anosym.utilities.test;
 
 import com.anosym.vjax.v3.VObjectMarshaller;
 import com.anosym.utilities.Application;
-import com.anosym.utilities.Utility;
-import com.anosym.utilities.geocode.CountryCode;
-import com.anosym.vjax.util.VConditional;
-import com.anosym.vjax.xml.VDocument;
-import com.anosym.vjax.xml.VElement;
 import java.io.InputStream;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -56,11 +51,14 @@ public class UtilityTester {
   }
 
   public static void main(String[] args) throws Exception {
-    String uah = "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko".toLowerCase();
-    String regex = "windows\\s+[^\\d*\\w*]\\s+\\d+\\.*\\d*";
+    String regex = "^(\\w+\\.*)+@\\w+(\\.\\w+)+$";
     Pattern p = Pattern.compile(regex);
-    Matcher m = p.matcher(uah);
+    Matcher m = p.matcher("hi@9.ke");
+    Matcher mm = p.matcher("hi.poa@9.ke");
+    Matcher mmm = p.matcher("hi^ha@9.ke");
     System.out.println(m.find());
+    System.out.println(mm.find());
+    System.out.println(mmm.find());
   }
 
   private static void randomize(List<String> candidates) {

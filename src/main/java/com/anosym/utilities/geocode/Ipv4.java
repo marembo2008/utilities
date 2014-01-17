@@ -42,6 +42,10 @@ public class Ipv4 implements Comparable<Ipv4> {
   }
 
   private static int[] toInts(String str) {
+    //return 0 if ipv6, we cannot hanlde that right now.
+    if (str.contains(":")) {
+      return new int[]{0, 0, 0, 0};
+    }
     String bbs[] = str.split("\\.");
     if (bbs.length != 4) {
       throw new IllegalArgumentException("Invalid ip address: " + str);
@@ -197,5 +201,10 @@ public class Ipv4 implements Comparable<Ipv4> {
     } else {
       fourthOctet++;
     }
+  }
+  public static void main(String[] args) {
+    String ip = "0:0:0:0:0:0:0:1";
+    Ipv4 p = new Ipv4(ip);
+    System.out.println(p);
   }
 }

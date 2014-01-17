@@ -96,6 +96,12 @@
       <groupId>jmimemagic</groupId>
       <artifactId>jmimemagic</artifactId>
       <version>0.1.2</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>xercesImpl</artifactId>
+          <groupId>xerces</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 </project>
