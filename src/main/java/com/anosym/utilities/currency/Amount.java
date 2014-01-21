@@ -63,14 +63,8 @@ public class Amount implements Serializable, Comparable<Amount> {
   }
 
   private static Currency getDefault() {
-    String country = System.getProperty(DEFAULT_ENVIRONMENT_COUNTRY);
-    String language = System.getProperty(DEFAULT_ENVIRONMENT_LANGUAGE);
-    if (country == null) {
-      country = "US";
-    }
-    if (language == null) {
-      language = "eng_US";
-    }
+    String language = System.getProperty(DEFAULT_ENVIRONMENT_LANGUAGE, "en_US");
+    String country = System.getProperty(DEFAULT_ENVIRONMENT_COUNTRY, "US");
     try {
       return Currency.getInstance(new Locale(language, country));
     } catch (Exception e) {
