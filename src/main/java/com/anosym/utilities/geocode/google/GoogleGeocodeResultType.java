@@ -25,15 +25,24 @@ public enum GoogleGeocodeResultType {
   premise,
   subpremise,
   postal_code,
+  postal_code_prefix,
+  postal_town,
   natural_feature,
   airport,
   park,
   point_of_interest,
+  subway_station,
   /**
    * Primarily for address_component
    */
   post_box,
   street_number,
   floor,
-  room;
+  room,
+  transit_station,
+  establishment,
+  parking,
+  bus_station,
+  hospital,
+  train_station;
 }
