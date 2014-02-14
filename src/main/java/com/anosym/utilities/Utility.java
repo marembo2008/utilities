@@ -13,6 +13,7 @@ import com.anosym.utilities.geocode.CountryIpMapping;
 import com.anosym.utilities.geocode.CountryIpMappings;
 import com.anosym.utilities.geocode.Ipv4;
 import com.anosym.utilities.geocode.google.GoogleGeocodeResponse;
+import com.anosym.utilities.logging.UtilityLogger;
 import com.anosym.vjax.VMarshaller;
 import com.anosym.vjax.VXMLBindingException;
 import com.anosym.vjax.v3.VObjectMarshaller;
@@ -133,7 +134,7 @@ public final class Utility {
       int secondOctet = 0;
       while ((line = reader.readLine()) != null) {
         line = line.trim();
-        System.out.println("ip mapping: " + line);
+        UtilityLogger.fine("ip mapping: " + line);
         String mappings[] = line.split(",");
         if (mappings.length == 6) {
           //get the range and the country code
@@ -695,8 +696,8 @@ public final class Utility {
   }
 
   public static int complement2(int value) {
-    System.out.println(Integer.toString(value, 2));
-    System.out.println(Integer.toString(~value, 2));
+    UtilityLogger.fine(Integer.toString(value, 2));
+    UtilityLogger.fine(Integer.toString(~value, 2));
     return value;
   }
 
@@ -1182,7 +1183,7 @@ public final class Utility {
   }
 
   public static String getCurrentLocation(String lat, String lon) {
-    System.out.println("lat: " + lat + "\nLon: " + lon);
+    UtilityLogger.fine("lat: " + lat + "\nLon: " + lon);
     if (lat != null && lon != null) {
       try {
         //get country from google map
@@ -1193,7 +1194,7 @@ public final class Utility {
         VDocument doc = VDocument.parseDocument(inn);
         VElement root = doc.getRootElement();
         VElement status = root.findChild("status");
-        System.out.println(doc.toXmlString());
+        UtilityLogger.fine(doc.toXmlString());
         if (status != null && "OK".equalsIgnoreCase(status.toContent())) {
           //good result
           VElement anyResult = root.findChild("result");
@@ -1219,7 +1220,7 @@ public final class Utility {
   }
 
   public static GoogleGeocodeResponse getCurrentLocationFromGoogle(String lat, String lon) {
-    System.out.println("lat: " + lat + "\nLon: " + lon);
+    UtilityLogger.fine("lat: " + lat + "\nLon: " + lon);
     if (lat != null && lon != null) {
       try {
         //get country from google map
@@ -1228,7 +1229,7 @@ public final class Utility {
         URLConnection urlConnection = url.openConnection();
         InputStream inn = urlConnection.getInputStream();
         VDocument doc = VDocument.parseDocument(inn);
-        System.out.println(doc.toXmlString());
+        UtilityLogger.fine(doc.toXmlString());
         VObjectMarshaller<GoogleGeocodeResponse> vom = new VObjectMarshaller<GoogleGeocodeResponse>(GoogleGeocodeResponse.class);
         return vom.unmarshall(doc);
       } catch (Exception ex) {
@@ -1239,7 +1240,7 @@ public final class Utility {
   }
 
   public static GoogleGeocodeResponse getCurrentLocationFromGoogle(String address) {
-    System.out.println("Address: " + address);
+    UtilityLogger.info("Address: " + address);
     if (address != null) {
       try {
         address = address.replaceAll("\\W+", "+");
@@ -1249,7 +1250,7 @@ public final class Utility {
         URLConnection urlConnection = url.openConnection();
         InputStream inn = urlConnection.getInputStream();
         VDocument doc = VDocument.parseDocument(inn);
-        System.out.println(doc.toXmlString());
+        UtilityLogger.fine(doc.toXmlString());
         VObjectMarshaller<GoogleGeocodeResponse> vom = new VObjectMarshaller<GoogleGeocodeResponse>(GoogleGeocodeResponse.class);
         return vom.unmarshall(doc);
       } catch (Exception ex) {
@@ -1260,7 +1261,7 @@ public final class Utility {
   }
 
   public static String getCurrentCountryCode(String lat, String lon) {
-    System.out.println("lat: " + lat + "\nLon: " + lon);
+    UtilityLogger.info("lat: " + lat + "\nLon: " + lon);
     if (lat != null && lon != null) {
       try {
         //get country from google map
@@ -1293,7 +1294,7 @@ public final class Utility {
   }
 
   public static String getCurrentCountry(String lat, String lon) {
-    System.out.println("lat: " + lat + "\nLon: " + lon);
+    UtilityLogger.info("lat: " + lat + "\nLon: " + lon);
     if (lat != null && lon != null) {
       try {
         //get country from google map
@@ -1304,7 +1305,7 @@ public final class Utility {
         VDocument doc = VDocument.parseDocument(inn);
         VElement root = doc.getRootElement();
         VElement status = root.findChild("status");
-        System.out.println(doc.toXmlString());
+        UtilityLogger.fine(doc.toXmlString());
         if (status != null && "OK".equalsIgnoreCase(status.toContent())) {
           //good result
           VElement anyResult = root.findChild("result");
@@ -1472,7 +1473,7 @@ public final class Utility {
   public static void main(String[] args) {
     String address = "Outering Road, Donholm";
     GoogleGeocodeResponse ggr = getCurrentLocationFromGoogle(address);
-    System.out.println(VMarshaller.toXmlString(ggr));
+    UtilityLogger.fine(VMarshaller.toXmlString(ggr));
   }
 
   private static String doCapitalize(String str) {
