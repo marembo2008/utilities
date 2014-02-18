@@ -28,6 +28,7 @@ public enum GoogleGeocodeResultType {
   postal_code_prefix,
   postal_town,
   natural_feature,
+  church,
   airport,
   park,
   point_of_interest,
