@@ -48,4 +48,18 @@ public final class Permutation {
     }
     return l * factorial((l - 1));
   }
+
+  public static void main(String[] args) {
+    String str = "123456789";
+    int i = 0;
+    long millis = System.currentTimeMillis();
+    String[] perms = permutations(str);
+    long millis_ = System.currentTimeMillis();
+    System.out.println("Permutation: " + ((millis_ - millis) / 1000) + "s");
+    System.out.println(perms.length);
+//    for (String s : permutations(str)) {
+//      System.out.println(i++);
+//      System.out.println(s);
+//    }
+  }
 }

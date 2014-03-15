@@ -41,7 +41,7 @@ public class Coordinate extends Point2D.Double implements Geometry, Serializable
 
   @Override
   public final void setLocation(double x, double y) {
-    super.setLocation(Utility.roundOff(x, 7), Utility.roundOff(y, 7));
+    super.setLocation(Utility.roundOff(x, 8), Utility.roundOff(y, 8));
   }
 
   @Override
