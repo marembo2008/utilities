@@ -15,7 +15,9 @@ public class CityCode implements Serializable {
   private CountryCode countryCode;
   private String name;
   /**
-   * This is not standard, and can be anything. It can be for example regional dialing code.
+   * This is not standard, and can be anything.
+   *
+   * It can be for example regional dialing code e.g. (berlin 030, nairobi 020).
    */
   private String code;
   /**

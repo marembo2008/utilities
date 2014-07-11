@@ -153,26 +153,10 @@ public class Ipv4 implements Comparable<Ipv4> {
 
   @Override
   public boolean equals(Object obj) {
-    if (obj == null) {
-      return false;
+    if (obj.getClass() == getClass()) {
+      return compareTo((Ipv4) obj) == 0;
     }
-    if (getClass() != obj.getClass()) {
-      return false;
-    }
-    final Ipv4 other = (Ipv4) obj;
-    if (this.firstOctet != other.firstOctet) {
-      return false;
-    }
-    if (this.secondOctet != other.secondOctet) {
-      return false;
-    }
-    if (this.thirdOctet != other.thirdOctet) {
-      return false;
-    }
-    if (this.fourthOctet != other.fourthOctet) {
-      return false;
-    }
-    return true;
+    return false;
   }
 
   @Override
@@ -201,10 +185,5 @@ public class Ipv4 implements Comparable<Ipv4> {
     } else {
       fourthOctet++;
     }
-  }
-  public static void main(String[] args) {
-    String ip = "0:0:0:0:0:0:0:1";
-    Ipv4 p = new Ipv4(ip);
-    System.out.println(p);
   }
 }
