@@ -116,12 +116,4 @@ public class CountryCode implements Serializable, Comparable<CountryCode> {
         return true;
     }
 
-    /**
-     * Helper for moving from the deprecated code.
-     *
-     * @return
-     */
-    public Country toCountry() {
-        return Country.fromIsoCode(isoCode);
-    }
 }
