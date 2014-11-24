@@ -65,7 +65,7 @@ public class Money implements Serializable, Comparable<Money> {
 
     /**
      * Returns if these two monies are in the same currency.
-     *
+     * <p>
      * @param money
      * @return
      */
@@ -75,7 +75,8 @@ public class Money implements Serializable, Comparable<Money> {
 
     private void CheckSameMoney(Money money) {
         if (!isSameMoney(money)) {
-            throw new MoneyException("Invalid Operation: Monies are of different currencies");
+            throw new MoneyException("Invalid Operation: Monies are of different currencies: {" + currency.getCurrencyIsoCode() + " != " + money
+                    .getCurrency().getCurrencyIsoCode());
         }
     }
 
@@ -170,7 +171,7 @@ public class Money implements Serializable, Comparable<Money> {
 
     /**
      * for legacy amount for representation of money.
-     *
+     * <p>
      * @return
      */
     public Amount toAmount() {
