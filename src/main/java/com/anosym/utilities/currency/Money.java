@@ -75,8 +75,8 @@ public class Money implements Serializable, Comparable<Money> {
 
     private void CheckSameMoney(Money money) {
         if (!isSameMoney(money)) {
-            throw new MoneyException("Invalid Operation: Monies are of different currencies: {" + currency.getCurrencyIsoCode() + " != " + money
-                    .getCurrency().getCurrencyIsoCode());
+            throw new MoneyException("Invalid Operation: Monies are of different currencies: {" + currency.toFullString() + " != " + money
+                    .getCurrency().toFullString());
         }
     }
 

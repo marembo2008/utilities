@@ -6,6 +6,7 @@ package com.anosym.utilities.currency;
 
 import com.anosym.utilities.geocode.CountryCode;
 import com.anosym.utilities.geocode.jaxb.CountryCodeJaxbAdapter;
+import com.google.common.base.Objects;
 import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -70,12 +71,7 @@ public class CurrencyCode implements Serializable {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 97 * hash + (this.countryCode != null ? this.countryCode.hashCode() : 0);
-        hash = 97 * hash + (this.currencyName != null ? this.currencyName.hashCode() : 0);
-        hash = 97 * hash + (this.currencySymbol != null ? this.currencySymbol.hashCode() : 0);
-        hash = 97 * hash + (this.currencyIsoCode != null ? this.currencyIsoCode.hashCode() : 0);
-        return hash;
+        return 789 + Objects.hashCode(currencyIsoCode);
     }
 
     @Override
@@ -87,22 +83,7 @@ public class CurrencyCode implements Serializable {
             return false;
         }
         final CurrencyCode other = (CurrencyCode) obj;
-        if (this.countryCode != other.countryCode && (this.countryCode == null || !this.countryCode.equals(
-                other.countryCode))) {
-            return false;
-        }
-        if ((this.currencyName == null) ? (other.currencyName != null) : !this.currencyName.equals(other.currencyName)) {
-            return false;
-        }
-        if ((this.currencySymbol == null) ? (other.currencySymbol != null) : !this.currencySymbol.equals(
-                other.currencySymbol)) {
-            return false;
-        }
-        if ((this.currencyIsoCode == null) ? (other.currencyIsoCode != null) : !this.currencyIsoCode.equals(
-                other.currencyIsoCode)) {
-            return false;
-        }
-        return true;
+        return Objects.equal(currencyIsoCode, other.currencyIsoCode);
     }
 
     @Override
@@ -111,7 +92,11 @@ public class CurrencyCode implements Serializable {
     }
 
     public String toFullString() {
-        return "CurrencyCode{" + "countryCode=" + countryCode + ", currencyName=" + currencyName + ", currencySymbol=" + currencySymbol + ", currencyIsoCode=" + currencyIsoCode + '}';
+        return "CurrencyCode{"
+                + "countryCode=" + countryCode + ", "
+                + "currencyName=" + currencyName + ", "
+                + "currencySymbol=" + currencySymbol + ", "
+                + "currencyIsoCode=" + currencyIsoCode + '}';
     }
 
     public String getDescription() {
