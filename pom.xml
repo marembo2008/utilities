@@ -109,4 +109,11 @@
             <version>18.0</version>
         </dependency>
     </dependencies>
+
+    <scm>
+        <connection>scm:git:https://github.com/marembo2008/utilities.git</connection>
+        <developerConnection>scm:git:https://github.com/marembo2008/utilities.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/marembo2008/utilities.git</url>
+    </scm>
 </project>
